@@ -1,14 +1,10 @@
 # JavaScript30 - 30 天挑战纯 JS 中文指南
 
-> _© 版权声明_  
-
-> 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)，学生
-
+> _© 版权声明_    
+> 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)，一枚学生  
 > JavaScript30 教程作者：[Wes Bos](https://github.com/wesbos)    
-
 > JavaScript30 挑战官网：[JavaScript30](https://javascript30.com)  
-
-> 指南发布平台：[GitHub](https://github.com/soyaine/JavaScript30)、[简书](http://www.jianshu.com/notebooks/8509835/latest)、[Blog](http://soyaine.cn/code/)
+> 指南发布平台：[GitHub](https://github.com/soyaine/JavaScript30)、[简书](http://www.jianshu.com/notebooks/8509835/latest)、[Blog](http://soyaine.cn/code/)  
 
 ## 灵感区
 
@@ -29,7 +25,6 @@ This is my note when I practice the JavaScript30.
 
 ~~[在线 GitBook]（写完之后会有）~~
 
-[GitHub 源码](https://github.com/soyaine/JavaScript30)
 
 Wes Bos 提供了一份教程，该如何使用他的资料呢？
 
@@ -38,6 +33,7 @@ Wes Bos 提供了一份教程，该如何使用他的资料呢？
 - [挑战初始文档](https://github.com/wesbos/JavaScript30)：这是 Web Bos 这份教程涉及的代码，共有 30 个文件夹，每个文件夹中至少有两个文件。
 	- **index-START.html**：是提供给我们的初始文档，为了便于我们专注于 JavaScript 的编写，这个文档已经将基础的 HTML 和 CSS 部分写好，我们只需要在这个基础上编写 JavaScript 代码，实现特定的功能即可。
 	- **index-FINISHED.html**：已经实现了最终效果的文档，可以查看效果和实现思路。
+- [我写的中文指南源码](https://github.com/soyaine/JavaScript30)：部分代码写了注释，文档结构和 Wes Bos 提供的相同，进入每个文件夹都可查看当前挑战的指南。
 
 ## Plan
 
