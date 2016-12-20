@@ -4,7 +4,7 @@
 > 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)，学生
 > JavaScript30 教程作者：[Wes Bos](https://github.com/wesbos)  
 > JavaScript30 挑战官网：[JavaScript30](https://javascript30.com)
-> 指南发布平台：[GitHub](https://github.com/soyaine/JavaScript30)、[简书](http://www.jianshu.com/notebooks/8509835/latest)、[Blog]()
+> 指南发布平台：[GitHub](https://github.com/soyaine/JavaScript30)、[简书](http://www.jianshu.com/notebooks/8509835/latest)、[Blog](http://soyaine.cn/code/)
 
 ## 灵感区
 
