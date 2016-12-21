@@ -8,7 +8,7 @@ by [缉熙Soyaine](https://github.com/soyaine)
 
 模拟一个打鼓的页面。用户在键盘上按下 ASDFGHJKL 这几个键时，页面上与字母对应的按钮变大变亮，对应的鼓点声音响起来。
 
-## 关键点
+## 关键要点
 
 1. 键盘事件
 2. 播放声音
@@ -47,7 +47,7 @@ by [缉熙Soyaine](https://github.com/soyaine)
 
 ### ``forEach`` 与箭头函数
 
-使用 ``document.querySelector`` 获取一组符合 CSS 选择符的元素快照，类型为 NodeList，对其进行遍历时可采用 ``forEach`` 方法。
+使用 ``document.querySelector`` 获取一组符合 CSS 选择符的元素快照，类型为 NodeList（此对象是对于文档的实时运行的动态查询），对其进行遍历时可采用 ``forEach`` 方法。
 
 ```javascript
 // Code from http://es6-features.org/#StatementBodies

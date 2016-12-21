@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS + CSS Clock</title>
+</head>
+<body>
+
+
+<div class="clock">
+    <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+    </div>
+</div>
+
+
+<style>
+    html {
+        background:#abc7d3 url(http://unsplash.it/1500/1000?image=113&blur);
+        background-size:cover;
+        font-family:'helvetica neue';
+        text-align: center;
+        font-size: 10px;
+    }
+
+    body {
+        font-size: 2rem;
+        display:flex;
+        flex:1;
+        min-height: 100vh;
+        align-items: center;
+    }
+
+    .clock {
+        width: 30rem;
+        height: 30rem;
+        border:20px solid white;
+        border-radius:50%;
+        margin:50px auto;
+        position: relative;
+        padding:2rem;
+        background: rgba(0, 0, 0, .4);
+        box-shadow:
+                0 0 2px 4px rgba(0,0,0,0.1),
+                inset 0 0 1px 2px #EFEFEF,
+                inset 0 0 30px black,
+                0 0 10px 3px rgba(0,0,0,0.2);
+    }
+
+    .clock-face {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+
+    .hand {
+        width:50%;
+        background:#fff;
+        position: absolute;
+        top:50%;
+        right: 50%;
+        box-shadow:
+                0 0 0 .1px #fff,
+                0 0 0 1px rgba(0,0,0,0.1),
+                0 0 8px rgba(0,0,0,0.4),
+                2px 5px 1px rgba(0, 0, 0, .5);
+        transform-origin: 100% 50%;
+        transform: rotate(90deg);
+
+        transition-timing-function: cubic-bezier(0.9, 0.54, 0.26, 1.68);
+    }
+
+    .clock-face:after {
+        width: 1em;
+        height: 1em;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: #a8c5d1;
+        border-radius: 50%;
+        box-shadow:
+                0 0 0 2px rgba(0,0,0,0.1),
+                0 0 10px rgba(0,0,0,0.2);
+        transform: translate(-50%, -50%);
+        /*transition: all .05s;*/
+
+    }
+
+    .hour-hand {
+        width: 40%;
+        height:10px;
+        margin-top: -5px;
+        border-bottom-left-radius: .5em;
+        border-top-left-radius: .5em;
+        transition: all 3s;
+    }
+
+    .min-hand {
+        width: 45%;
+        height:5px;
+        margin-top: -2.5px;
+        transition: all .1s;
+    }
+
+    .second-hand {
+        height: 2px;
+        margin-top: -1px;
+        border-bottom-left-radius: 100%;
+        border-top-left-radius: 100%;
+        transition: all .05s;
+        background-color: red;
+    }
+
+</style>
+
+<script>
+//    由于不能每次都重新读取，所以放到外面
+//    const secHand = document.getElementsByClassName("second-hand")[0];
+    const secHand = document.querySelector('.second-hand');
+    const minHand = document.querySelector('.min-hand');
+    const hourHand = document.querySelector('.hour-hand');
+
+    function setDate() {
+        const date = new Date();
+
+        const second = date.getSeconds();
+        const secondDeg = (90 + (second / 60) * 360) % 360;
+
+        const min = date.getMinutes();
+        const minDeg = (90 + (min / 60) * 360) % 360;
+
+        const hour = date.getHours();
+        const hourDeg = (90 + (hour / 12) * 360 + (min / 12 / 60) * 360);// 加入分钟所占的时间，使时针可以缓慢地移动
+
+        secHand.style.transform = `rotate(${ secondDeg }deg)`;
+        minHand.style.transform = `rotate(${ minDeg }deg)`;
+        hourHand.style.transform = `rotate(${ hourDeg }deg)`;
+
+//        console.log(`${hour}:${min}:${second} - ${hourDeg}:${minDeg}:${secondDeg}` );
+    }
+
+//    setDate();
+    setInterval(setDate, 1000);
+</script>
+</body>
+</html>
