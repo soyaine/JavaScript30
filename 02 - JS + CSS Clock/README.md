@@ -6,6 +6,8 @@
 
 文档中已经给出了 HTML 结构，表盘内有三个 `div` 对应三个指针。只需要添加一些 CSS 效果，然后用 JavaScript 动态更新指针的状态即可。
 
+[看在线效果](http://soyaine.github.io/JavaScript30/02%20-%20JS%20%2B%20CSS%20Clock/index-SOYAINE.html)
+
 ## 关键要点
 
 1. 表盘上指针的样式：旋转的效果

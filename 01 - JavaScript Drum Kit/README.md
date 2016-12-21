@@ -8,6 +8,8 @@ by [缉熙Soyaine](https://github.com/soyaine)
 
 模拟一个打鼓的页面。用户在键盘上按下 ASDFGHJKL 这几个键时，页面上与字母对应的按钮变大变亮，对应的鼓点声音响起来。
 
+[看在线效果](http://soyaine.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-SOYAINE.html)
+
 ## 关键要点
 
 1. 键盘事件
