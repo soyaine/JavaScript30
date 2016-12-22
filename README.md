@@ -41,9 +41,9 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 
 ## 目录
 
-1. [x] JavaScript Drum Kit
-2. [x] [JS + CSS Clock](http://soyaine.cn/JavaScript30/02%20-%20JS%20%2B%20CSS%20Clock/index-SOYAINE.html)
-3. [ ] CSS Variables
+1. [x] JavaScript Drum Kit  [指南](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit) |  [纯 JS 模拟敲鼓效果](http://soyaine.github.io/JavaScript30/01 - JavaScript Drum Kit/index-SOYAINE.html)
+2. [x] JS + CSS Clock [指南](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit) |  [纯 JavaScript+CSS 时钟效果](http://soyaine.github.io/JavaScript30/02 - JS %2B CSS Clock/index-SOYAINE.html)
+3. [x] CSS Variables [指南](https://github.com/soyaine/JavaScript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock) |  [用 CSS 变量实现拖动控制参数效果](http://soyaine.github.io/JavaScript30/03%20-%20CSS%20Variables/index-SOYAINE.html)
 4. [ ] Array Cardio, Day 1
 5. [ ] Flex Panel Gallery
 6. [ ] Type Ahead
