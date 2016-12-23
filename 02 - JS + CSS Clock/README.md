@@ -2,7 +2,7 @@
 
 ## 实现效果
 
-![实现效果 by soyaine](https://cl.ly/2N0a0G0c0z2n/Screen%20recording%202016-12-21%20at%2003.24.19%20PM.gif)
+![实现效果 by soyaine](https://cl.ly/0y1C2T1z3p2R/Screen%20recording%202016-12-23%20at%2012.30.25%20PM.gif)
 
 文档中已经给出了 HTML 结构，表盘内有三个 `div` 对应三个指针。只需要添加一些 CSS 效果，然后用 JavaScript 动态更新指针的状态即可。
 
