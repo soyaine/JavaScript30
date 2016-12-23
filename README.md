@@ -3,9 +3,8 @@
 最后更新：2016-12-21
 
 > 中文指南作者：©[缉熙Soyaine](https://github.com/soyaine)  
-> JavaScript30 教程作者：[Wes Bos](https://github.com/wesbos)    
-> JavaScript30 挑战官网：[JavaScript30](https://javascript30.com)  
-> 指南发布平台：[GitHub](https://github.com/soyaine/JavaScript30)、[简书](http://www.jianshu.com/notebooks/8509835/latest)
+> [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
+> 完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
 ## JavaScript30 是什么？
 
@@ -44,7 +43,7 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 1. [x] JavaScript Drum Kit  [指南](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit) |  [纯 JS 模拟敲鼓效果](http://soyaine.github.io/JavaScript30/01 - JavaScript Drum Kit/index-SOYAINE.html)
 2. [x] JS + CSS Clock [指南](https://github.com/soyaine/JavaScript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock) |  [纯 JavaScript+CSS 时钟效果](http://soyaine.github.io/JavaScript30/02 - JS %2B CSS Clock/index-SOYAINE.html)
 3. [x] CSS Variables [指南](https://github.com/soyaine/JavaScript30/tree/master/03%20-%20CSS%20%Variables) |  [用 CSS 变量实现拖动控制参数效果](http://soyaine.github.io/JavaScript30/03%20-%20CSS%20Variables/index-SOYAINE.html)
-4. [x] Array Cardio, Day 1 [指南](https://github.com/soyaine/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [数组基本操作方法示例](http://soyaine.github.io/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201/index-SOYAINE.html)
+4. [x] Array Cardio, Day 1 [指南](https://github.com/soyaine/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [数组基本操作方法示例](http://soyaine.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index-SOYAINE.html)
 5. [ ] Flex Panel Gallery
 6. [ ] Type Ahead
 7. [ ] Array Cardio, Day 2

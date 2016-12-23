@@ -56,14 +56,14 @@
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
 	// 把这些人从大到小进行排序
-	  const ordered = inventors.sort(function(firstName, secondName) {
-		  if(firstName.year > secondName.year) {
-			  return 1;  //	  对 sort 函数，返回值为 -1 排在前面，1 排在后面
-		  } else {
-			  return -1;
-		  }
-	  });
-	  console.table(ordered);	
+//	  const ordered = inventors.sort(function(firstName, secondName) {
+//		  if(firstName.year > secondName.year) {
+//			  return 1;  //	  对 sort 函数，返回值为 -1 排在前面，1 排在后面
+//		  } else {
+//			  return -1;
+//		  }
+//	  });
+//	  console.table(ordered);	
 	  
 	  const __ordered = inventors.sort((a, b) => (a > b) ? 1 : -1);
 	  console.table(__ordered);
@@ -73,16 +73,16 @@
     // 4. How many years did all the inventors live
 	// 他们所有人一共活了多少岁
 	// 下面三种写法是一样的效果
-	  var total = 0;
-	  for(var i = 0; i < inventors.length; i++) {
-		  total += inventors[i].passed - inventors[i].year;
-	  }
-	  console.log(total);
-
-	 var totalYears = inventors.reduce(function(total, inventor) {
-		  return total + inventor.passed - inventor.year;
-	  }, 0);
-	  console.log(totalYears);
+//	  var total = 0;
+//	  for(var i = 0; i < inventors.length; i++) {
+//		  total += inventors[i].passed - inventors[i].year;
+//	  }
+//	  console.log(total);
+//
+//	 var totalYears = inventors.reduce(function(total, inventor) {
+//		  return total + inventor.passed - inventor.year;
+//	  }, 0);
+//	  console.log(totalYears);
 	  
 	  const totalYear = inventors.reduce( (total, inventor) => {
 		  return total + inventor.passed - inventor.year;
@@ -112,10 +112,10 @@
 	  
 	  // 下面是我在豆瓣里筛选书名里含有 CSS 的书的代码
 	  // https://book.douban.com/tag/web
-	  const cate = document.querySelectorAll('.subject-list h2 a');
-	  const book = links
-					.map(link => link.title)
-					.filter(title => title.includes('CSS'));
+//	  const links = document.querySelectorAll('.subject-list h2 a');
+//	  const book = links
+//					.map(link => link.title)
+//					.filter(title => title.includes('CSS'));
 	  
 	  
     // 7. sort Exercise
@@ -129,6 +129,7 @@
 	  
     // 8. Reduce Exercise
     // Sum up the instances of each of these
+	// 统计各个物品的数量
 	  const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 	  const reduce = data.reduce( (obj, item) => {
 		  if( !obj[item]  ) {
