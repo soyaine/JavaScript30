@@ -6,6 +6,7 @@
 ## 实现效果
 
 ![实现 by Soyaine](https://cl.ly/2Z1x1N0M2u2D/Screen%20recording%202016-12-22%20at%2002.03.35%20PM.gif)
+若加载不出来，[请看链接。](https://cl.ly/2Z1x1N0M2u2D/Screen%20recording%202016-12-22%20at%2002.03.35%20PM.gif)
 
 用 JavaScript 和 CSS3 实现拖动滑块时，实时调整图片的内边距、模糊度、背景颜色，同时标题中 JS 两字的颜色也随图片背景颜色而变化。
 

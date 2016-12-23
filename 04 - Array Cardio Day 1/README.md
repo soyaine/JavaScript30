@@ -107,7 +107,7 @@ return a;
 })
 ```
 
-![Amazon 订单筛选](https://cl.ly/0m0Z3f3D3d3z/Image%202016-12-23%20at%2012.00.46%20PM.png)
+![Amazon 订单筛选](http://ofjku7mlm.bkt.clouddn.com/16-12-23/51544750-file_1482484281402_1a92.png)
 
 ### [reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
