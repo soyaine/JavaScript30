@@ -5,7 +5,7 @@
 
 ## 实现效果
 
-![可伸缩的图片墙演示](https://cl.ly/2O0f2D2A3i0B/Screen%20recording%202016-12-30%20at%2009.01.14%20PM.gif)
+![可伸缩的图片墙演示](http://ofjku7mlm.bkt.clouddn.com/Screen%20recording%202016-12-30%20at%2009.01.14%20PM.gif)
 
 点击五张图片中的任意一张时，图片展开，同时图片中心的文字上下分别移入文字。点击已经展开的图片，图片被压缩，同时图片中上下两端的文字被挤走。若图片加载不出来[请点链接](https://d17oy1vhnax1f7.cloudfront.net/items/3J2r2G0p0C0h0q2c3R3p/Screen%20recording%202016-12-30%20at%2005.33.01%20PM.gif)，查看在线效果[请看这里。](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
 
@@ -30,7 +30,7 @@ CSS 在这个过程中占了重点，运用 `flex` 可以使各个元素按一�
 1. 将 `.panels` 设置为 `display:flex`
 2. 设定每个子 panel 的 `flex` 值为 1
 3. 针对每个子 panel，控制其中的文字垂直、水平居中（单独看每个 panel，其中的文字也可以用 flex 的思路来使其三等分后居中）
-	1. 设置 flex 的主轴
+	1. 设置 flex 的主轴方向
 	2. 设置内部元素的布局方式：居中
 4. 设定点击图片后文字移动的样式
 5. 设定点击图片展开后的图片的 `flex` 值
