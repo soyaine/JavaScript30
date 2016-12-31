@@ -5,20 +5,18 @@
 
 ## 实现效果
 
-<!--![可伸缩的图片墙演示](http://ofjku7mlm.bkt.clouddn.com/Screen%20recording%202016-12-30%20at%2009.01.14%20PM.gif)-->
+![可伸缩的图片墙演示](https://cl.ly/1X1A320o0x1T/Screen%20recording%202016-12-31%20at%2010.06.10%20AM.gif)
 
-<img src="https://cl.ly/1X1A320o0x1T/Screen%20recording%202016-12-31%20at%2010.06.10%20AM.gif">
+点击任意一张图片，图片展开，同时从图片上下两方分别移入文字。点击已经展开的图片后，图片被压缩，同时该图片上下两端的文字被挤走。若图片加载不出来，[请点链接看更完整的演示图片](https://d17oy1vhnax1f7.cloudfront.net/items/3J2r2G0p0C0h0q2c3R3p/Screen%20recording%202016-12-30%20at%2005.33.01%20PM.gif)，在线效果[请点这里。](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
 
-点击五张图片中的任意一张时，图片展开，同时图片中心的文字上下分别移入文字。点击已经展开的图片，图片被压缩，同时图片中上下两端的文字被挤走。若图片加载不出来[请点链接看更完整的演示图片](https://d17oy1vhnax1f7.cloudfront.net/items/3J2r2G0p0C0h0q2c3R3p/Screen%20recording%202016-12-30%20at%2005.33.01%20PM.gif)，在线效果[请点这里。](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
-
-另外描述一下初始文档的 DOM 结构：以 `.panels` 为父 `div` 之下，有 5 个类名为 `.panel` 的 `div`，这 5 个各含有 3 个子 `p` 标签。而相应的 CSS 样式中，动画的时间等特性已经设定好，只需要完成不同状态下的页面布局以及事件监听即可。
+初始文档的 DOM 结构：以 `.panels` 为父 `div` 之下，有 5 个类名为 `.panel` 的 `div`，这 5 个各含有 3 个子 `p` 标签。而相应的 CSS 样式中，动画时间等特性已经设定好，只需要完成不同状态下的页面布局以及事件监听即可。
 
 ## 涉及特性
 
 - display: flex
-- flex-direction
-- justify-content
-- align-items
+   - flex-direction
+   - justify-content
+   - align-items
 - transform: translateX/translateY
 - element.classList.toggle()
 - transitionend 事件
@@ -31,9 +29,11 @@ CSS 在这个过程中占了重点，运用 `flex` 可以使各个元素按一�
 
 1. 将 `.panels` 设置为 `display:flex`
 2. 设定每个子 panel 的 `flex` 值为 1
-3. 针对每个子 panel，控制其中的文字垂直、水平居中（单独看每个 panel，其中的文字也可以用 flex 的思路来使其三等分后居中）
-	1. 设置 flex 的主轴方向
-	2. 设置内部元素的布局方式：居中
+3. 针对每个子 panel，设为 `display:flex`，设置其 flex 主轴方向
+4. 控制 `.panle` 的子元素 `<p>` 中的文字垂直、水平居中（单独看每个 panel，其中的文字也可以用 flex 的思路来使其三等分后居中）
+	1. 设置为 `display:flex`
+	2. 设置 `flex` 值
+	2. 设置其子元素的布局方式：垂直水平居中（沿主轴、侧轴居中）
 4. 设定点击图片后文字移动的样式
 5. 设定点击图片展开后的图片的 `flex` 值
 
@@ -47,14 +47,39 @@ CSS 在这个过程中占了重点，运用 `flex` 可以使各个元素按一�
 
 ### [Flexbox](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 
-MDN 的图示如下：
+![MDN flexbox 图示](https://mdn.mozillademos.org/files/12998/flexbox.png)
 
-![MDN flexbox](https://mdn.mozillademos.org/files/12998/flexbox.png)
+这一个挑战的关键部分就在于理解如何使用 Flexbox，挑战的文档里嵌套了三个 flex 容器，作为弹性盒子，它们各自的作用是：
 
+- `.panels`：使其中的 `.panel` 按横向的 flex 等分排布（此处为五等分）
+- `.panel`：使其中的 `<p>` 按纵向的 flex 等分排布（此处为三等分）
+- `p` ：借用 flex 相对于主轴及侧轴的对齐方式，使其中的文字垂直水平居中
 
+容易混淆不同 CSS 属性的应用对象，只需记住针对容器内子元素的特性较少（只有 5 个），可以这样联想：针对某一个具体的小元素进行设置，可供发挥的空间比较少，而针对 Flex 容器本身，有统筹大局的责任，故特性多一些。下面简单介绍一些基本的特性（没有完全列出）。
 
+#### 针对 Flex items 的特性（Children）
 
-	
+- `flex-growth`：伸展值
+- `flex-shrink`：可接受的压缩值
+- `flex-basis`：元素默认的尺寸值
+- `flex`：以上三个值按顺序的缩写
+
+#### 针对 Flex container 的特性（Parent）
+
+- `display: flex`：将这个元素设置成弹性盒子
+- `flex-direction`：主轴方向
+	- `row`：横向
+	- `column`：纵向
+- `justify-content`：沿主轴的的对齐方式
+- `align-items`：沿侧轴的对齐方式
+- `align-content`：子元素中文本沿侧轴的对齐方式（只有一行时无效）
+
+可以在下面两个地方试一下 Flex 的各种特性：
+
+- [http://demo.agektmr.com/flexbox/](http://demo.agektmr.com/flexbox/)
+- [http://the-echoplex.net/flexyboxes/](http://the-echoplex.net/flexyboxes/)
+- [http://codepen.io/justd/pen/yydezN](http://codepen.io/justd/pen/yydezN)
+
 ## 延伸思考
 
 在 index-FINISHED.html 的解决方案中，用了两种 `class` 值来分别控制 `div` 元素和 `p` 元素的动画，这就会造成一个问题，当快速点击两下时，会出现相反的组合（图片缩小 + 上下文字出现）。
