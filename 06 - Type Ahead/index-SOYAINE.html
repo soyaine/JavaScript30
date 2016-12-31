@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="诗句 抑或 诗名">
+    <ul class="suggestions">
+      <li>输入词句，找一首诗</li>
+      <li></li>
+    </ul>
+  </form>
+<script>
+// const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+ const endpoint = 'https://raw.githubusercontent.com/soyaine/FE-Practice/gh-pages/TangPoetryCut.json';
+	
+ 	
+ const  poetrys = [];
+fetch(endpoint)
+		.then(blob => blob.json())
+		.then(data => poetrys.push(...data));
+ 
+	function findMatches( wordToMatch, poetrys) {
+		return poetrys.filter(poet => {
+			// 找出匹配的诗句
+			const regex = new RegExp(wordToMatch, 'gi');
+			return poet.detail_text.match(regex) || poet.title.match(regex);
+		});
+	}
+	
+//	function displayMatches() {
+//		const matches = findMatches(this.value, poetrys);
+//		suggestions.innerHTML = "";
+//		matches.forEach(poet => {
+//			const li = document.createElement('li');
+//			li.textContent = poet.detail_text;
+////				.replace('。', '。'+'&#8291;');
+//			suggestions.appendChild(li);
+//			console.log(poet.detail_text)
+//		});
+//	}
+	
+	function displayMatches() {
+		const matches = findMatches(this.value, poetrys);
+		const html = matches.map( poet => {
+			const text = poet.detail_text.replace(this.value, `<span class="hl">${ this.value }</span>`);
+			return `
+				<li>
+					<span class="poet">${ text }</span>
+				</li>
+			`;
+		}).join('');
+//			<span class="info">
+//							<span class="title">${ poet.title }</span>
+//							<span class="author">${ poet.detail_author[0] }</span>
+//					</span>
+		console.log(html);
+		suggestions.innerHTML = html;
+	}
+	
+	const search = document.querySelector('.search');
+	const suggestions = document.querySelector('.suggestions');
+	
+	search.addEventListener('change', displayMatches);
+	search.addEventListener('keyup', displayMatches);
+
+//	console.log(cities);
+ </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
