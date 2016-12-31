@@ -1,7 +1,7 @@
     html {
       box-sizing: border-box;
       background:hsla(193, 30%, 64%, 0.78);
-      font-family:'Kaiti', 'helvetica neue';
+      font-family: 'Kaiti', 'SimHei', 'Hiragino Sans GB ', 'helvetica neue';
       font-size: 20px;
       font-weight: 200;
     }
@@ -75,6 +75,12 @@ span.info {
 		font-size: .8em;
 /*		right: 0;*/
 	}
+span.title {
+	color: #7c8e94;
+	position: absolute;
+    right: 5px;
+    bottom: 1px;
+}
 
     .details {
       text-align: center;
