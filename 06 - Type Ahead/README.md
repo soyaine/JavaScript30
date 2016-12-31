@@ -5,6 +5,6 @@
 
 ## 实现效果
 
-![仿即时搜索诗句效果](https://cl.ly/3k3E0N3X3F3E/Screen%20recording%202016-12-31%20at%2009.34.26%20PM.gif)
+![仿即时搜索诗句效果](https://cl.ly/0b360y270s0f/Screen%20recording%202016-12-31%20at%2010.05.23%20PM.gif)
 
 在输入框中输入一个词，迅速展示含有这个词的诗句。
