@@ -7,9 +7,9 @@
 
 <!--![可伸缩的图片墙演示](http://ofjku7mlm.bkt.clouddn.com/Screen%20recording%202016-12-30%20at%2009.01.14%20PM.gif)-->
 
-<img src="http://ofjku7mlm.bkt.clouddn.com/Screen%20recording%202016-12-30%20at%2009.01.14%20PM.gif">
+<img src="https://cl.ly/1X1A320o0x1T/Screen%20recording%202016-12-31%20at%2010.06.10%20AM.gif">
 
-点击五张图片中的任意一张时，图片展开，同时图片中心的文字上下分别移入文字。点击已经展开的图片，图片被压缩，同时图片中上下两端的文字被挤走。若图片加载不出来[请点链接](https://d17oy1vhnax1f7.cloudfront.net/items/3J2r2G0p0C0h0q2c3R3p/Screen%20recording%202016-12-30%20at%2005.33.01%20PM.gif)，查看在线效果[请看这里。](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
+点击五张图片中的任意一张时，图片展开，同时图片中心的文字上下分别移入文字。点击已经展开的图片，图片被压缩，同时图片中上下两端的文字被挤走。若图片加载不出来[请点链接看更完整的演示图片](https://d17oy1vhnax1f7.cloudfront.net/items/3J2r2G0p0C0h0q2c3R3p/Screen%20recording%202016-12-30%20at%2005.33.01%20PM.gif)，在线效果[请点这里。](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
 
 另外描述一下初始文档的 DOM 结构：以 `.panels` 为父 `div` 之下，有 5 个类名为 `.panel` 的 `div`，这 5 个各含有 3 个子 `p` 标签。而相应的 CSS 样式中，动画的时间等特性已经设定好，只需要完成不同状态下的页面布局以及事件监听即可。
 
@@ -69,7 +69,7 @@ MDN 的图示如下：
 
 这样也就可以回答我最开始的疑问，为何要多添加一个 [`transitioned` 的事件监听](https://developer.mozilla.org/zh-CN/docs/Web/Events/transitionend)，这个事件会在 `transition` 结束之后被触发，所以目的是先让图片的压缩拉伸完成，再移动文字。
 
-也就是说，如果出去字体大小的变化，具体的动画细节其实是这样的：
+也就是说，如果除去字体大小的变化，具体的动画细节其实是这样的：
 - 图片展开：微微压缩一段距离 -> 展开图片 -> 文字向中心移动
 - 图片压缩：微微展开一段距离 -> 压缩图片 -> 文字向上下移动
 
@@ -81,7 +81,7 @@ MDN 的图示如下：
 	transition:transform 0.5s 0.7s;
 }
 
-/* 修改 .open-actived -> .open
+/* 修改 .open-actived -> .open*/
 .panel.open p:first-child {
 	transform: translateY(0);
 }
