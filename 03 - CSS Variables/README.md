@@ -99,16 +99,3 @@
 	```js
 	document.documentElement.style.setProperty('--base', '#fff');
 	```
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

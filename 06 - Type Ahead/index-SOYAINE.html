@@ -17,7 +17,7 @@
 <script>
 // const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 
- const endpoint = 'https://raw.githubusercontent.com/soyaine/FE-Practice/gh-pages/TangPoetryCut.json';
+ const endpoint = 'https://raw.githubusercontent.com/soyaine/FE-Practice/f438d3bdf099461f88322b1b1f20c9d58f66f1ec/TangPoetryCut.json';
 	
  	
  const  poetrys = [];
@@ -30,7 +30,7 @@ fetch(endpoint)
 			// 找出匹配的诗句
 			const regex = new RegExp(wordToMatch, 'gi');
 			let author = poet.detail_author.join('');
-			console.log(author);
+//			console.log(author);
 			return poet.detail_text.match(regex) || poet.title.match(regex) || author.match(regex);
 		});
 	}
@@ -60,11 +60,7 @@ fetch(endpoint)
 				</li>
 			`;
 		}).join('');
-//			<span class="info">
-//							<span class="title">${ poet.title }</span>
-//							<span class="author">${ poet.detail_author[0] }</span>
-//					</span>
-		console.log(html);
+//		console.log(html);
 		suggestions.innerHTML = html;
 	}
 	
