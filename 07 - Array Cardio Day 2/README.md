@@ -7,7 +7,7 @@
 
 这一部分是[挑战 04 ](https://github.com/soyaine/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/README.md)的后续，继续熟悉 Array 的一些基本方法，包括 `some()`、`every()`、`find()`、`splice()`、`slice()`。这篇比较简单，但如果没有看过上一篇文章，建议回去温习一下。（毕竟上一篇更酷 :）
 
-文档提供了用于操作的 people 和 comments 数组，模拟的是人员信息及评论数据，基于这两个数组可以练习一下上面提及的各个方法，请打开 HTML 后在 Console 面板中查看输出结果。
+文档提供了用于操作的 people 和 comments 数组，模拟的是人员信息及评论数据，基于这两个数组可以练习一下上面提及的各个方法，[请打开 HTML](http://soyaine.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index-SOYAINE.html) 后在 Console 面板中查看输出结果。
 
 ## 过程指南
 

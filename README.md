@@ -48,7 +48,7 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 5. [x] [Flex Panel Gallery 指南](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/README.md) | [可伸缩的图片墙在线效果](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
 6. [x] [Type Ahead 指南](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead/README.md) |  [根据关键词快速匹配诗句在线效果](http://soyaine.cn/JavaScript30/06%20-%20Type%20Ahead/index-SOYAINE.html)
 7. [x] [Array Cardio, Day 2 指南](https://github.com/soyaine/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202) | [数组基本操作方法示例二](http://soyaine.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index-SOYAINE.html)
-8. [ ] Fun with HTML5 Canvas
+8. [ ] Fun with HTML5 Canvas 指南
 9. [ ] Dev Tools Domination
 10. [ ] Hold Shift and Check Checkboxes
 11. [ ] Custom Video Player
