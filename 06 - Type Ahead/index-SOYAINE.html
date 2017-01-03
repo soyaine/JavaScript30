@@ -17,42 +17,32 @@
 <script>
 // const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 
- const endpoint = 'https://raw.githubusercontent.com/soyaine/FE-Practice/f438d3bdf099461f88322b1b1f20c9d58f66f1ec/TangPoetryCut.json';
+    const endpoint = 'https://raw.githubusercontent.com/soyaine/FE-Practice/f438d3bdf099461f88322b1b1f20c9d58f66f1ec/TangPoetryCut.json';
 	
  	
- const  poetrys = [];
-fetch(endpoint)
+    const  poetrys = [];
+    fetch(endpoint)
 		.then(blob => blob.json())
 		.then(data => poetrys.push(...data));
  
 	function findMatches( wordToMatch, poetrys) {
 		return poetrys.filter(poet => {
-			// 找出匹配的诗句
+			// 正则找出匹配的诗句
 			const regex = new RegExp(wordToMatch, 'gi');
-			let author = poet.detail_author.join('');
+			const author = poet.detail_author.join('');
 //			console.log(author);
 			return poet.detail_text.match(regex) || poet.title.match(regex) || author.match(regex);
 		});
 	}
-	
-//	function displayMatches() {
-//		const matches = findMatches(this.value, poetrys);
-//		suggestions.innerHTML = "";
-//		matches.forEach(poet => {
-//			const li = document.createElement('li');
-//			li.textContent = poet.detail_text;
-////				.replace('。', '。'+'&#8291;');
-//			suggestions.appendChild(li);
-//			console.log(poet.detail_text)
-//		});
-//	}
-	
+
 	function displayMatches() {
 		const matches = findMatches(this.value, poetrys);
 		const regex = new RegExp(this.value, 'gi');
 		const html = matches.map( poet => {
+			// 替换高亮的标签
 			const text = poet.detail_text.replace(regex, `<span class="hl">${ this.value }</span>`);
 			const title = poet.title.replace(regex, `<span class="hl">${ this.value }</span>`)
+			// 构造 HTML 值
 			return `
 				<li>
 					<span class="poet">${ text }</span>
@@ -70,7 +60,7 @@ fetch(endpoint)
 	search.addEventListener('change', displayMatches);
 	search.addEventListener('keyup', displayMatches);
 
-//	console.log(cities);
+//	console.log(poetrys);
  </script>
   </body>
 </html>
