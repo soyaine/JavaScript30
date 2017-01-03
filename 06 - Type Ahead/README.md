@@ -11,7 +11,7 @@
 
 初始文档中提供了 HTML 和 CSS，我们需要补全 JS 代码。这个挑战是 Ajax 的预热练习，在异步方面用到了一些目前还未被完全支持的新特性，但很好用。
 
-原文档中选的内容是英文城市名，我将其换成了唐诗，构造了一个含有 70 多首唐诗的 JSON 数据，访问地址是 https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json，请自由取用。
+原文档中选的内容是英文城市名，我将其换成了唐诗，构造了一个含有 70 多首唐诗的 JSON 数据，访问地址是 [https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json](https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json)，请自由取用。
 
 ## 涉及特性
 
