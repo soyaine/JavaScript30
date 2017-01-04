@@ -19,7 +19,7 @@
 
 	ctx.lineWidth = 90;
 	ctx.lineCap = "round";
-	ctx.lineJoin = "miter";
+	ctx.lineJoin = "round";
 	ctx.strokeStyle = "#f00";
 	ctx.fillStyle = "#f00";
 	
@@ -46,14 +46,14 @@
 		ctx.strokeStyle = `hsl(${ hue }, 90%, 50%)`;	
 		if(hue >= 360) hue = 0;
 		hue++;
-//		
+		
 //		水墨效果
 //		ctx.strokeStyle = `rgba(0, 0, 0, ${ hue })`;			
 //		if(hue >= 0.7) hue = 0;
 //		hue += 0.01;
 		
 //		控制笔触大小
-		if(ctx.lineWidth > 100 || ctx.lineWidth < 80) {
+		if(ctx.lineWidth > 120 || ctx.lineWidth < 10) {
 			direction = !direction;
 		} 
 		if (direction) {
@@ -74,7 +74,6 @@
 //		console.log(ctx.lineWidth);
 //		console.log(x +"-" + e.offsetX);
 	}
-	
 	canvas.addEventListener('mousedown', (e) => {
 		isDrawing = true;
 		[lastX, lastY] = [e.offsetX, e.offsetY];

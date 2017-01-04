@@ -7,7 +7,7 @@
 
 ![HTML5 Canvas 画板效果](https://cl.ly/412q1g0u3N31/Screen%20recording%202017-01-04%20at%2007.38.05%20PM.gif)
 
-用 HTML5 中的 Canvas 的路径绘制实现一个绘画板，可供鼠标画画，颜色呈彩虹色渐变，画笔大小同样呈渐变效果。这部分不涉及 CSS 内容，全部由 JS 来实现。
+用 HTML5 中的 Canvas 的路径绘制实现一个绘画板，可供鼠标画画，颜色呈彩虹色渐变，画笔大小同样呈渐变效果。这部分不涉及 CSS 内容，全部由 JS 来实现。[在线体验请看这个链接](http://soyaine.cn/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-SOYAINE.html)。
 
 ## 涉及特性
 
