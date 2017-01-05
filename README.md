@@ -1,9 +1,9 @@
 # JavaScript30 - 一个月纯 JS 挑战中文指南
 
-创建日期：2016-12-20
-最后更新：2017-01-03
+创建日期：2016-12-20  
+最后更新：2017-01-05
 
-> 中文指南作者：©[缉熙Soyaine](https://github.com/soyaine)  
+> 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
 > 完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
@@ -48,7 +48,7 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 5. [x] [Flex Panel Gallery 指南](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/README.md) | [可伸缩的图片墙在线效果](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
 6. [x] [Type Ahead 指南](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead/README.md) |  [根据关键词快速匹配诗句在线效果](http://soyaine.cn/JavaScript30/06%20-%20Type%20Ahead/index-SOYAINE.html)
 7. [x] [Array Cardio, Day 2 指南](https://github.com/soyaine/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202) | [数组基本操作方法示例二](http://soyaine.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index-SOYAINE.html)
-8. [ ] Fun with HTML5 Canvas 指南
+8. [x] [Fun with HTML5 Canvas 指南](https://github.com/soyaine/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas) | [彩虹画笔绘画板在线效果](http://soyaine.cn/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-SOYAINE.html)
 9. [ ] Dev Tools Domination
 10. [ ] Hold Shift and Check Checkboxes
 11. [ ] Custom Video Player
@@ -72,4 +72,4 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 29. [ ] Countdown Timer
 30. [ ] Whack A Mole
 
-参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出的一些建议，最适合你的方法需要你自己去摸索。
+参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出了一些建议和心得，最适合你的方法还需要你自己去摸索。
