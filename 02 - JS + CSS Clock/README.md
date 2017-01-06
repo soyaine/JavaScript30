@@ -3,6 +3,9 @@
 > 作者：©[缉熙Soyaine](https://github.com/soyaine)  
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 2 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
+> 创建时间：2016-12-21    
+最后更新：2017-01-06
+
 ## 实现效果
 
 ![实现效果 by soyaine](https://cl.ly/0y1C2T1z3p2R/Screen%20recording%202016-12-23%20at%2012.30.25%20PM.gif)
@@ -101,5 +104,58 @@
 		```
 		
 	4. 将角度值赋值给 HTML 元素的 `style` 中的 `transform` 属性
+
+## 延伸思考
+
+> 2017-01-06 更新完善，感谢 [@cody1991 提的 issue](https://github.com/soyaine/JavaScript30/issues/1) 
+
+此处存在一个小瑕疵，当秒针旋转一圈之后回到初始位置，开始第二圈旋转，角度值的变化时 444° → 90° → 96° .... 这个过程中，指针会先逆时针从 444° 旋转至 90°，再继续我们期望的顺时针旋转，由于秒针变换时间只有 0.05s，所以呈现的效果就是秒针闪了一下，如果想要观察细节，可以将 `.second` 设为 `transition: all 1s`。要解决这个问题，目前找到了两种解决办法：
+
+#### 方法一
+
+在这个特殊点将指针的 `transition` 属性去掉，由于距离短、时间短，将逆时针回旋的过程瞬间完成。
+
+```js
+if (secondDeg === 90) secHand.style.transition = 'all 0s';
+else secHand.style.transition = 'all 0.05s';
+
+if (minDeg === 90) minHand.style.transition = 'all 0s';
+else minHand.style.transition = 'all 0.1s';
+```
+
+#### 方法二
+
+既然引发问题的是角度的大小变化，那就可以对这个值进行处理。此前的代码中，每秒都会重新 new 一个 Date 对象，用来计算角度值，但如果让这个角度值一直保持增长，也就不会出现逆时针回旋的问题了。
+
+这是 @cody1991 提供的思路。只在页面第一次加载时 new 一次 Date 对象，此后每秒直接更新角度值。
+
+```js
+let secondDeg = 0,
+minDeg = 0,
+hourDeg = 0;
+
+function initDate() {
+	const date = new Date();
+	const second = date.getSeconds();
+	secondDeg = 90 + (second / 60) * 360;
+	const min = date.getMinutes();
+	minDeg = 90 + (min / 60) * 360 + ((second / 60) / 60) * 360;
+	const hour = date.getHours();
+	hourDeg = 90 + (hour / 12) * 360 + ((min / 60) / 12) * 360 + (((second / 60) / 60) / 12) * 360;
+}
+
+function updateDate() {
+	secondDeg += (1 / 60) * 360;
+	minDeg += ((1 / 60) / 60) * 360;
+	hourDeg += (((1 / 60) / 60) / 12);
 	
-大功告成！
+	secHand.style.transform = `rotate(${ secondDeg}deg)`;
+	minHand.style.transform = `rotate(${ minDeg }deg)`;
+	hourHand.style.transform = `rotate(${ hourDeg }deg)`;
+}
+
+initDate();
+setInterval(updateDate, 1000);
+```
+
+问题解决。大功告成！
