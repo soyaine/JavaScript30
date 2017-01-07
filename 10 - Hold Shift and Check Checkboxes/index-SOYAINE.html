@@ -128,16 +128,16 @@
 		lastChecked = this;
 	}
 	
-	let swift = false;
+	let onOff = false;
 //	处理方法二：利用数组索引获取需要选中的范围
 	function handleCheck1(e) {
 		if(!lastChecked) lastChecked = this;
-		swift = lastChecked.checked ? true : false;
+		onOff = lastChecked.checked ? true : false;
 		if(e.shiftKey) {
 			let start = boxArr.indexOf(this);
 			let end = boxArr.indexOf(lastChecked);
 			boxArr.slice(Math.min(start, end), Math.max(start, end) + 1)
-					   .forEach(input => input.checked = swift);
+					   .forEach(input => input.checked = onOff);
 			console.log(start + "+" + end);
 		}
 		lastChecked = this;

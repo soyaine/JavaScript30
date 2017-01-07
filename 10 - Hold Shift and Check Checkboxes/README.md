@@ -70,31 +70,40 @@ function handleCheck0(e) {
 
 首先将获取到的 `<input>` 组转化为数组，针对每次操作，获取 A 和 B，利用 `indexOf()` 来获得 A 和 B 在数组中的索引值，由此即可确定范围，并能通过 `slice()` 来直接截取 A-B 的所有 DOM 元素，并进行状态改变的操作，而变量 `onOff` 表示 A-B 范围内的状态，`true` 表示选中，`false` 表示取消选中。
 
-1. 转换 Nodelist 为数组
-	```js
+1. 转换 Nodelist 为数组  
+
+	````js
 	const boxs = document.querySelectorAll('.inbox input[type="checkbox"]');
 	const boxArr = Array.from(boxs);
-	```
-2. 针对按下了 Shift 键的情况，获取 A-B 范围
-	```js
+	````
+	
+2. 针对按下了 Shift 键的情况，获取 A-B 范围  
+
+	````js
 	let start = boxArr.indexOf(this);
 	let end = boxArr.indexOf(lastChecked);
-	```
-3. 截取该范围内的数组元素，并改变选中状态
+	````
+	
+3. 截取该范围内的数组元素，并改变选中状态  
+
 	```js
 	boxArr.slice(Math.min(start, end), Math.max(start, end) + 1)
 					   .forEach(input => input.checked = onOff);
 	```
-4. 确定选中 or 取消选中
-	```js
+	
+4. 确定选中 or 取消选中    
+
+	````js
 	onOff = lastChecked.checked ? true : false;
-	```
-5. 标记 A 值
-	```js
+	````
+	
+5. 标记 A 值    
+ 
+	````js
 	if(!lastChecked) lastChecked = this;
 	/* ... */
 	lastChecked = this;
-	```
+	````
 	
 注意，以上几点是按点抽出的分块代码，整合起来的解决办法如下：
 
