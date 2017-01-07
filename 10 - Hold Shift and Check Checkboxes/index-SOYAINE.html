@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shift 多选</title>
+</head>
+<body>
+  <style>
+
+    html {
+      font-family: sans-serif;
+      background:#ffc600;
+    }
+
+    .inbox {
+      max-width:400px;
+      margin:50px auto;
+      background:white;
+      border-radius:5px;
+      box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+    }
+
+    .item {
+      display:flex;
+      align-items:center;
+      border-bottom: 1px solid #F1F1F1;
+    }
+
+    .item:last-child {
+      border-bottom:0;
+    }
+
+
+    input:checked + p {
+      background:#F9F9F9;
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      margin:20px;
+    }
+
+    p {
+      margin:0;
+      padding:20px;
+      transition:background 0.2s;
+      flex:1;
+      font-family:'Microsoft Yahei', 'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+      border-left: 1px solid #D1E2FF;
+    }
+
+    .details {
+      text-align: center;
+      font-size: 15px;
+    }
+
+
+  </style>
+   <!--
+   The following is a common layout you would see in an email client.
+
+   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes inbetween those two checkboxes should be checked.
+
+  -->
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox">
+      <p>这是一个邮件收件箱</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>选中一项</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>然后按住 Shift 键</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>选择另外一项</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>它们之间的都会被选中</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>试着实现这个功能</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>只用原生 JS </p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Good Luck!</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>记得展示你的成果♪(^∇^*)</p>
+    </div>
+  </div>
+
+<script>
+	const boxs = document.querySelectorAll('.inbox input[type="checkbox"]');
+	const boxArr = Array.from(boxs);
+	
+	let lastChecked;
+	
+//	处理方法一：用变量 inBetween 对需要选中的元素进行标记
+	function handleCheck0(e) {
+		let inBetween = false;
+//		console.log(lastChecked);
+		if(e.shiftKey && this.checked){
+			boxs.forEach(input => {
+				console.log(input);
+				if(input === lastChecked || input ===this) {
+					inBetween = !inBetween;
+				}
+				if(inBetween) {
+					console.log("on");
+					input.checked = true;
+				}
+		});
+		}
+		lastChecked = this;
+	}
+	
+	let swift = false;
+//	处理方法二：利用数组索引获取需要选中的范围
+	function handleCheck1(e) {
+		if(!lastChecked) lastChecked = this;
+		swift = lastChecked.checked ? true : false;
+		if(e.shiftKey) {
+			let start = boxArr.indexOf(this);
+			let end = boxArr.indexOf(lastChecked);
+			boxArr.slice(Math.min(start, end), Math.max(start, end) + 1)
+					   .forEach(input => input.checked = swift);
+			console.log(start + "+" + end);
+		}
+		lastChecked = this;
+	}
+	
+	boxs.forEach(box => box.addEventListener('click', handleCheck1));
+</script>
+</body>
+</html>

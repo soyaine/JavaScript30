@@ -1,7 +1,7 @@
 # JavaScript30 - 一个月纯 JS 挑战中文指南
 
 创建日期：2016-12-20  
-最后更新：2017-01-05
+最后更新：2017-01-07
 
 > 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
@@ -35,9 +35,6 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 	- **index-START.html**：是提供给我们的初始文档，方便我们专注于 JavaScript 的编写，这个文档已经将基础的 HTML 和 CSS 部分写好，我们只需要在这个基础上编写 JavaScript 代码，实现特定的功能即可。
 	- **index-FINISHED.html**：已经实现了最终效果的文档，可以查看效果和实现思路。
 - [我写的中文指南源码](https://github.com/soyaine/JavaScript30)：文档结构和 Wes Bos 提供的相同，进入每个文件夹都可查看当前挑战的指南（README.md），我完成挑战时建立的文件是 **index-SOYAINE.html**，里面有核心代码的中文注释。如果阅读过程中发现问题，请[在这里提 issue](https://github.com/soyaine/JavaScript30/issues)。  如果喜欢记得 Star 哟~♪(^∇^*)，鼓励我写出更好的文章。
-- ~~[在线 GitBook]（写完之后会有）~~
-- [在简书发布的 JavaScript30 中文指南](http://www.jianshu.com/p/23c4be7973d7)：点击下方目录中的链接即可跳转到练习对应的指南。   
-
 
 ## 目录
 
@@ -45,12 +42,12 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 2. [x] [JS + CSS Clock 指南](https://github.com/soyaine/JavaScript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock) |  [纯 JavaScript+CSS 时钟效果](http://soyaine.github.io/JavaScript30/02 - JS %2B CSS Clock/index-SOYAINE.html)
 3. [x] [CSS Variables 指南](https://github.com/soyaine/JavaScript30/tree/master/03%20-%20CSS%20%Variables) |  [用 CSS 变量实现拖动控制参数效果](http://soyaine.github.io/JavaScript30/03%20-%20CSS%20Variables/index-SOYAINE.html)
 4. [x] [Array Cardio, Day 1 指南](https://github.com/soyaine/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [数组基本操作方法示例一](http://soyaine.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index-SOYAINE.html)
-5. [x] [Flex Panel Gallery 指南](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/README.md) | [可伸缩的图片墙在线效果](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
-6. [x] [Type Ahead 指南](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead/README.md) |  [根据关键词快速匹配诗句在线效果](http://soyaine.cn/JavaScript30/06%20-%20Type%20Ahead/index-SOYAINE.html)
+5. [x] [Flex Panel Gallery 指南](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/README.md) | [可伸缩的图片墙在线效果](https://github.com/soyaine/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
+6. [x] [Type Ahead 指南](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead/README.md) |  [根据关键词快速匹配诗句在线效果](https://github.com/soyaine/JavaScript30/06%20-%20Type%20Ahead/index-SOYAINE.html)
 7. [x] [Array Cardio, Day 2 指南](https://github.com/soyaine/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202) | [数组基本操作方法示例二](http://soyaine.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index-SOYAINE.html)
-8. [x] [Fun with HTML5 Canvas 指南](https://github.com/soyaine/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas) | [彩虹画笔绘画板在线效果](http://soyaine.cn/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-SOYAINE.html)
-9. [ ] Dev Tools Domination
-10. [ ] Hold Shift and Check Checkboxes
+8. [x] [Fun with HTML5 Canvas 指南](https://github.com/soyaine/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas) | [彩虹画笔绘画板在线效果](https://github.com/soyaine/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-SOYAINE.html) 
+9. [x] [Dev Tools Domination 指南](https://github.com/soyaine/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination/README.md) | [Console 调试技巧在线示例](https://github.com/soyaine/JavaScript30/09%20-%20Dev%20Tools%20Domination/index-SOYAINE.html)
+10. [x] Hold Shift and Check Checkboxes 指南
 11. [ ] Custom Video Player
 12. [ ] Key Sequence Detection
 13. [ ] Slide in on Scroll
