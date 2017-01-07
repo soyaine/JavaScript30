@@ -8,7 +8,7 @@
 
 ## 实现效果
 
-![shift 多选效果示例](https://cl.ly/422z2e3X350Z/Image%202017-01-07%20at%2012.03.29%20PM.png)
+![shift 多选效果示例](https://cl.ly/3l2V0I2P0Q0x/Screen%20recording%202017-01-08%20at%2012.03.42%20AM.gif)
 
 初始文档中提供了一组 `checkbox` 类型的 `input` 元素，选中某个复选框时，其 `<p>` 标签中的文字会显示删除线。最终效果是，提供按下 Shift 键后进行多选操作的功能。 [在线体验请点这里](https://soyaine.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-SOYAINE.html)。
 
