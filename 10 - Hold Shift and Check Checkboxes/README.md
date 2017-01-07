@@ -15,10 +15,12 @@
 ## 过程指南
 
 1. 获取所有的 `<input>` 元素，并添加事件监听
+
 	```js
 	const boxs = document.querySelectorAll('.inbox input[type="checkbox"]');
 	boxs.forEach(box => box.addEventListener('click', handleCheck));
 	```
+	
 2. 编写 handleCheck 内部的处理逻辑（细节请看下一部分）
 
 ## 解决思路
