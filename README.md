@@ -48,7 +48,7 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 8. [x] [Fun with HTML5 Canvas 指南](https://github.com/soyaine/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas) | [彩虹画笔绘画板在线效果](https://soyaine.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-SOYAINE.html) 
 9. [x] [Dev Tools Domination 指南](https://github.com/soyaine/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination/README.md) | [Console 调试技巧在线示例](https://soyaine.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/index-SOYAINE.html)
 10. [x] [Hold Shift and Check Checkboxes 指南](https://github.com/soyaine/JavaScript30/blob/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/README.md) | [Shift 批量选中在线效果](https://soyaine.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-SOYAINE.html)
-11. [x] [Custom Video Player 指南]((https://github.com/soyaine/JavaScript30/blob/master/11%20-%20Custom%20Video%20Player/README.md)) | [自定义视频播放器在线效果](http://soyaine.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/index-FINISHED.html)
+11. [x] [Custom Video Player 指南](https://github.com/soyaine/JavaScript30/blob/master/11%20-%20Custom%20Video%20Player/README.md)
 12. [x] [Key Sequence Detection 指南](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md)
 13. [ ] Slide in on Scroll
 14. [ ] JavaScript References vs. Copying
