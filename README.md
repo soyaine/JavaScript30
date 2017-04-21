@@ -3,7 +3,6 @@
 创建日期：2016-12-20  
 最后更新：2017-04-16
 
-> 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
 > 完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
@@ -70,3 +69,9 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 30. [ ] Whack A Mole
 
 参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出了一些建议和心得，最适合你的方法还需要你自己去摸索。
+
+ 
+- [@DrakeXiang](https://github.com/DrakeXiang) 　
+- [@zzh466](http://github.com/zzh466)
+- [@Xing Liu](https://github.com/S1ngS1ng)
+- [@缉熙Soyaine](https://github.com/soyaine) 
