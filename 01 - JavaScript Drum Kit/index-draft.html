@@ -69,7 +69,7 @@
     }
 
     function removeTransition(e) {
-      if(e.propertyName != 'border-left-color') return;
+      if(e.propertyName !== 'border-left-color') return;
       this.classList.remove('playing');
     }
 
@@ -85,31 +85,30 @@
     const keyCode = event.key;
 
     if ( keyCode === '76') {
-      alert("76");
+      alert('76');
     } else {
-      alert("false");
+      alert('false');
     }
   }
 
-  window.addEventListener("keydown", function(e){
+  window.addEventListener('keydown', function(e){
     const audio = document.querySelector(`audio[data-key="${ e.keyCode }"]`);
     const key = document.querySelector(`div[data-key="${ e.keyCode }"]`);
-//    console.log(video);
-//    console.log(key);
+    console.log(video);
+    console.log(key);
     if(!audio) return;
     audio.currentTime = 0;
     audio.play();
-    key.classList.add("playing");
-//    key.classList.remove("playing");
+    key.classList.add('playing');
+    // key.classList.remove("playing");
   }, false);
 
   function removeTransition(e){
-//    if(e.propertyName !== "border-left-color") return;
+    // if(e.propertyName !== "border-left-color") return;
     console.log(e.propertyName);
-//    e.target.classList.remove("playing");
+    // e.target.classList.remove("playing");
   }
 
-  const keys = document.querySelectorAll('.key');
   keys.forEach( keyin => keyin.addEventListener('transitionend', removeTransition));
 
 
