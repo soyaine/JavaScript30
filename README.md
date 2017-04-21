@@ -70,3 +70,10 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 30. [ ] Whack A Mole
 
 参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出了一些建议和心得，最适合你的方法还需要你自己去摸索。
+
+## 本中文指南贡献者名单
+ 
+- [@DrakeXiang](https://github.com/DrakeXiang) 　
+- [@zzh466](http://github.com/zzh466)
+- [@Xing Liu](https://github.com/S1ngS1ng)
+- [@缉熙Soyaine](https://github.com/soyaine) 
