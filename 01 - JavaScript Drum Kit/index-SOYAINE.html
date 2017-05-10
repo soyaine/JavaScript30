@@ -59,7 +59,7 @@
 
   <script>
     function removeTransition(event) {
-      if (event.propertyName !== 'transform') return; // 过滤其中一种事件
+      if (event.propertyName !== 'border-left-color') return; // 过滤其中一种事件
       event.target.classList.remove('playing'); // 移除高亮的样式
     }
 
