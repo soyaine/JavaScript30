@@ -60,15 +60,26 @@
       };
     }
 
-    const slideImages = document.querySelector('.slide-in');
+    const slideImages = Array.from(document.querySelectorAll('.slide-in'));
 
     function checkSlide(e) {
-        // slideImages.forEach(img => {
-        //     const slideInt = (window.scrollY + window.innerHeight) - img.height / 2;
-        //     const imgBottom = img.offseTop + img.height;
-        //
-        // });
-        console.count(e);
+		console.log(slideImages);
+         slideImages.forEach(img => {
+             const slideInAt = (window.scrollY + window.innerHeight) - img.height / 2;
+             const imgBottom = img.offsetTop + img.height;
+			 const isHalfShown = slideInAt > img.offsetTop;
+			 const isNotScrolledPast = window.scrollY < imgBottom;
+			 console.log('slideInAt' + slideInAt);
+			 console.log('' + );
+			 console.log('' + );
+			 console.log('' + );
+			 console.log('' + );
+			 console.log('' + );
+			 console.log('' + );
+         });
+//        console.count(e);
+		console.log(window.scrollY);
+		console.log(window.innerHeight);
     }
 
     window.addEventListener('scroll', checkSlide);

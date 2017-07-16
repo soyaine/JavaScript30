@@ -19,10 +19,21 @@
 通过 `translateX` 来控制左右移动
 `scale` 来控制缩放
 
+涉及页面尺寸的属性：
+
+- window.scrollY 文档从顶部开始滚动过的像素值
+- window.innerHeight viewport 部分的高度
+
+
+- ele.height 元素的高度
+- ele.offsetTop 当前元素相对于其 offsetParent 元素的顶部的距离。
+
 ## 解决思路
 
 1. 获取页面中的所有图片元素
-2. 
+2. 滚动事件监听
+3. 尺寸获取及处理
+4. 滚动至指定区域的条件判断
 
 ## 过程指南
 
