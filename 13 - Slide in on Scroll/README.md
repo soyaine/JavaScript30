@@ -10,7 +10,7 @@
 
 页面中的文章有几张配图，随着页面上下滚动，图片位置划过图片一半时，图片从两侧滑入；图片位置离开可见区域时，图片向两侧滑出。
 
-![Scroll 效果演示](https://cl.ly/2k2e2H0b1U0J/Screen%20Recording%202017-07-18%20at%2010.04%20%E4%B8%8A%E5%8D%88.gif)
+![Scroll 效果演示](https://cl.ly/2k2e2H0b1U0J/Screen%20Recording%202017-07-18%20at%2010.04%20%E4%B8%8A%E5%8D%88.gif)（图片太大，可点击[外链](https://cl.ly/2k2e2H0b1U0J)查看，或查看[在线效果](http://soyaine.cn/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)。）
 
 下图中蓝色方框位置即是图片所占位置，初始文档中已经写好了内容及样式，需要完成控制图片显示部分的代码来实现图片滑动的效果。
 
