@@ -60,29 +60,28 @@
       };
     }
 
-    const slideImages = Array.from(document.querySelectorAll('.slide-in'));
+    const slideImages = document.querySelectorAll('.slide-in');
 
     function checkSlide(e) {
-		console.log(slideImages);
-         slideImages.forEach(img => {
-             const slideInAt = (window.scrollY + window.innerHeight) - img.height / 2;
-             const imgBottom = img.offsetTop + img.height;
-			 const isHalfShown = slideInAt > img.offsetTop;
-			 const isNotScrolledPast = window.scrollY < imgBottom;
-			 console.log('slideInAt' + slideInAt);
-			 console.log('' + );
-			 console.log('' + );
-			 console.log('' + );
-			 console.log('' + );
-			 console.log('' + );
-			 console.log('' + );
-         });
-//        console.count(e);
-		console.log(window.scrollY);
-		console.log(window.innerHeight);
+        slideImages.forEach(img => {
+            const slideInAt = (window.scrollY + window.innerHeight) - img.height / 2;
+            // 图片底部
+            const imgBottom = img.offsetTop + img.height;
+            
+            // 已滑过了图片的一半
+            const isHalfShow = slideInAt > img.offsetTop;
+            // 未完全滑过图片
+            const isNotScrollPast = window.scrollY < imgBottom;
+            
+            if (isHalfShow && isNotScrollPast) {
+                img.classList.add('active');
+            } else {
+                img.classList.remove('active');
+            }
+     });
     }
 
-    window.addEventListener('scroll', checkSlide);
+    window.addEventListener('scroll', debounce(checkSlide));
 
   </script>
 
