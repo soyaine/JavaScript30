@@ -1,7 +1,7 @@
 # JavaScript30 - 一个月纯 JS 挑战中文指南
 
 创建日期：2016-12-20  
-最后更新：2017-07-16
+最后更新：2017-07-18
 
 > 中文指南作者：[缉熙Soyaine](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
