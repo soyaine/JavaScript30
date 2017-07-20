@@ -8,11 +8,11 @@
 
   <script>
     // 从 String、Number、Boolean 类型的值开始：
-    // let age = 100;
-    // let age2 = age;
-    // console.log(age, age2);
-    // age = 200;
-    // console.log(age, age2);
+     let age = 100;
+     let age2 = age;
+     console.log(age, age2);
+     age = 200;
+     console.log(age, age2);
 
     // let name = 'Wes';
     // let name2 = name;
@@ -29,7 +29,9 @@
     console.log(players, team);
     // You might think we can just do something like this:
     // 也许你觉得可以直接这样修改复制后的数组
-    // team[3] = 'Lux';
+     team[3] = 'Lux';
+    console.log(players, team);
+      
 
     // however what happens when we update that array?
     // 但我们修改这个数组的时候会发生什么呢？
@@ -54,7 +56,7 @@
     const team3 = [].concat(players);
 
     // or use the new ES6 Spread
-    // 再或者用 ES6 里面的[扩展语法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+    // 再或者用 ES6 里面的扩展语法
     const team4 = [...players];
     team4[3] = 'heeee hawww';
     console.log(team4);
@@ -68,7 +70,7 @@
     // 对 Object 类型的数据来说也是一样的，我们用一个 person 例子来说明
 
     // with Objects
-    // 现在又一个 Object 对象
+    // 现在有一个 Object 对象
     const person = {
       name: 'Wes Bos',
       age: 80
@@ -99,8 +101,8 @@
       }
     };
 
-    console.clear();
-    console.log(wes);
+//    console.clear();
+//    console.log(wes);
 
     const dev = Object.assign({}, wes);
 
