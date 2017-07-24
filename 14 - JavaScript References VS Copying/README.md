@@ -107,20 +107,20 @@
      利用 JSON 可以先将对象转成字符串的格式，然后再把它转成 JSON，从而实现复制。
      
      ```js
-      const wes = {
-      name: 'Wes',
-      age: 100,
-      social: {
-        twitter: '@wesbos',
-        facebook: 'wesbos.developer'
-      }
-    };
+     const wes = {
+       name: 'Wes',
+       age: 100,
+       social: {
+         twitter: '@wesbos',
+         facebook: 'wesbos.developer'
+       }
+     };
 
-    const dev = Object.assign({}, wes);
-    const dev2 = JSON.parse(JSON.stringify(wes));
-    console.log(wes);
-    console.log(dev);
-    console.log(dev2);
+     const dev = Object.assign({}, wes);
+     const dev2 = JSON.parse(JSON.stringify(wes));
+     console.log(wes);
+     console.log(dev);
+     console.log(dev2);
      ```
   
   最后需要注意的是：在前面的例子里面，我们用的数组和对象都只是一层嵌套，Lodash 有一个深度复制的方法，但你使用之前需要多考虑一下。

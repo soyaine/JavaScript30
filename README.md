@@ -51,7 +51,7 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 11. [x] [Custom Video Player 指南](https://github.com/soyaine/JavaScript30/blob/master/11%20-%20Custom%20Video%20Player/README.md)
 12. [x] [Key Sequence Detection 指南](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md) | [在线效果](http://soyaine.cn/JavaScript30/12%20-%20Key%20Sequence%20Detection/index-FINISHED.html)
 13. [x] [Slide in on Scroll 指南](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md) | [图片随屏幕滚动而滑入滑出的在线效果](http://soyaine.cn/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)
-14. [ ] JavaScript References vs. Copying
+14. [x] [JavaScript References vs. Copying 指南](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying)
 15. [ ] LocalStorage
 16. [ ] Mouse Move Shadow
 17. [ ] Sort Without Articles
