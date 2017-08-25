@@ -24,8 +24,7 @@
       <input type="submit" value="+ Add Item">
 	  <input class="check-all" type="button" value="Check All">
 	  <input class="uncheck-all" type="button" value="Uncheck All">
-	  <input class="delete-all" type="button" value="Delete All">
-	  
+	  <input class="delete-all" type="reset" value="Delete All">
     </form>
   </div>
 
@@ -72,7 +71,8 @@
   itemsList.addEventListener('click', toggleDone);
   populateList(items, itemsList);
 
-	
+    
+  // 延伸部分
   const checkAllBtn = document.querySelector('.check-all');
   const unCheckAllBtn = document.querySelector('.uncheck-all');
   const deleteAllBtn = document.querySelector('.delete-all');
