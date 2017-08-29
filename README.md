@@ -77,3 +77,4 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 - [@zzh466](http://github.com/zzh466)
 - [@Xing Liu](https://github.com/S1ngS1ng)
 - [@缉熙Soyaine](https://github.com/soyaine) 
+- [@大史快跑Dashrun](https://github.com/dashrun)
