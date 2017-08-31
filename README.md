@@ -75,12 +75,6 @@ No | Guide | Demo
 
 ## 本中文指南贡献者名单
  
-- [@DrakeXiang](https://github.com/DrakeXiang) 　
-- [@zzh466](http://github.com/zzh466)
-- [@Xing Liu](https://github.com/S1ngS1ng)
-- [@缉熙Soyaine](https://github.com/soyaine) 
-- [@大史快跑Dashrun](https://github.com/dashrun)
-
 Name | Contribution
 --- | ---
 [@DrakeXiang](https://github.com/DrakeXiang) |  No.[11](https://github.com/soyaine/JavaScript30/tree/master/11%20-%20Custom%20Video%20Player)
