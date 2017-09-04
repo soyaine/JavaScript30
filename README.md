@@ -1,7 +1,7 @@
 # JavaScript30 - 一个月纯 JS 挑战中文指南
 
 创建日期：2016-12-20  
-最后更新：2017-08-30
+最后更新：2017-09-04
 
 > Repo by: [缉熙Soyaine](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
@@ -51,13 +51,13 @@ No | Guide | Demo
 9 | [Dev Tools Domination 指南](https://github.com/soyaine/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination/README.md) | [Console 调试技巧在线示例](https://soyaine.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/index-SOYAINE.html)
 10 | [Hold Shift and Check Checkboxes 指南](https://github.com/soyaine/JavaScript30/blob/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/README.md) | [Shift 批量选中在线效果](https://soyaine.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-SOYAINE.html)
 11 | [Custom Video Player 指南](https://github.com/soyaine/JavaScript30/blob/master/11%20-%20Custom%20Video%20Player/README.md) | -  
-12 | [Key Sequence Detection 指南](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md) | [在线效果](http://soyaine.cn/JavaScript30/12%20-%20Key%20Sequence%20Detection/index-FINISHED.html)
-13 | [Slide in on Scroll 指南](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md) | [图片随屏幕滚动而滑入滑出的在线效果](http://soyaine.cn/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)
-14 | [JavaScript References vs. Copying 指南](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying) | - 
+12 | [Key Sequence Detection 指南](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md) | [在线效果](https://soyaine.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/index-FINISHED.html)
+13 | [Slide in on Scroll 指南](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md) | [图片随屏幕滚动而滑入滑出的在线效果](https://soyaine.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)
+14 | [JavaScript References vs. Copying 指南](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying) | -
 15 | LocalStorage | -   
-16 | [Mouse Move Shadow 指南](https://github.com/dashrun/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/README.md) | [文字阴影随鼠标移动在线效果](http://soyaine.cn/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-finished-es5.html) 
-17 | [Sort Without Articles 指南](https://github.com/soyaine/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/README.md) | [去前缀排序在线效果](http://soyaine.cn/JavaScript30/17%20-%20Sort%20Without%20Articles/index-finished-Dashrun-es5.html)  
-18 | Adding Up Times with Reduce | -    
+16 | [Mouse Move Shadow 指南](https://github.com/dashrun/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/README.md) | [文字阴影随鼠标移动在线效果](https://soyaine.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-finished-es5.html)
+17 | [Sort Without Articles 指南](https://github.com/soyaine/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/README.md) | [去前缀排序在线效果](https://soyaine.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index-finished-Dashrun-es5.html)  
+18 | [Adding Up Times with Reduce 指南](https://github.com/soyaine/JavaScript30/tree/master/18%20-%20AddingUpTimesWithReduce) | [使用 Reduce 进行时间叠加效果](https://soyaine.github.io/JavaScript30/18%20-%20AddingUpTimesWithReduce/index-finished-Dashrun-es6.html)    
 19 | Webcam Fun |  -  
 20 | Speech Detection | -   
 21 | Geolocation |  -  
@@ -74,15 +74,14 @@ No | Guide | Demo
 参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出了一些建议和心得，最适合你的方法还需要你自己去摸索。
 
 ## 本中文指南贡献者名单
- 
+
 Name | Contribution
 --- | ---
 [@DrakeXiang](https://github.com/DrakeXiang) |  No.[11](https://github.com/soyaine/JavaScript30/tree/master/11%20-%20Custom%20Video%20Player)
 [@zzh466](http://github.com/zzh466) | Review
 [@Xing Liu](https://github.com/S1ngS1ng) | Review
-[@大史快跑Dashrun](https://github.com/dashrun) |  No.[16](https://github.com/soyaine/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow).[17](https://github.com/soyaine/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles)
+[@大史快跑Dashrun](https://github.com/dashrun) |  No.[16](https://github.com/soyaine/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow).[17](https://github.com/soyaine/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles).[18](https://github.com/soyaine/JavaScript30/tree/master/18%20-%20AddingUpTimesWithReduce)
 [@缉熙Soyaine](https://github.com/soyaine) | No.[1](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit).[2](https://github.com/soyaine/JavaScript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock).[3](https://github.com/soyaine/JavaScript30/tree/master/03%20-%20CSS%20%Variables).[4](https://github.com/soyaine/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201).[5](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery).[6](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead).[7](https://github.com/soyaine/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202).[8](https://github.com/soyaine/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas).[9](https://github.com/soyaine/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination).[10](https://github.com/soyaine/JavaScript30/blob/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/README.md).[12](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md).[13](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md).[14](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying)
 
 ## JOIN US
 如果对这个系列的指南有什么改进的想法，欢迎[提 issue](https://github.com/soyaine/JavaScript30/issues)，如果你也想参与写作，请看 [wiki](https://github.com/soyaine/JavaScript30/wiki/%E6%8C%87%E5%8D%97%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E)，并联系 Soyaine。
-
