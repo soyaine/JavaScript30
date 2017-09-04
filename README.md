@@ -55,8 +55,8 @@ No | Guide | Demo
 13 | [Slide in on Scroll 指南](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md) | [图片随屏幕滚动而滑入滑出的在线效果](http://soyaine.cn/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)
 14 | [JavaScript References vs. Copying 指南](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying) | - 
 15 | LocalStorage | -   
-16 | Mouse Move Shadow |  -  
-17 | Sort Without Articles |  -  
+16 | [Mouse Move Shadow 指南](https://github.com/dashrun/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/README.md) | [文字阴影随鼠标移动在线效果](http://soyaine.cn/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-finished-es5.html) 
+17 | [Sort Without Articles 指南](https://github.com/soyaine/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/README.md) | [去前缀排序在线效果](http://soyaine.cn/JavaScript30/17%20-%20Sort%20Without%20Articles/index-finished-Dashrun-es5.html)  
 18 | Adding Up Times with Reduce | -    
 19 | Webcam Fun |  -  
 20 | Speech Detection | -   
@@ -74,7 +74,7 @@ No | Guide | Demo
 参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出了一些建议和心得，最适合你的方法还需要你自己去摸索。
 
 ## 本中文指南贡献者名单
-
+ 
 Name | Contribution
 --- | ---
 [@DrakeXiang](https://github.com/DrakeXiang) |  No.[11](https://github.com/soyaine/JavaScript30/tree/master/11%20-%20Custom%20Video%20Player)
@@ -85,3 +85,4 @@ Name | Contribution
 
 ## JOIN US
 如果对这个系列的指南有什么改进的想法，欢迎[提 issue](https://github.com/soyaine/JavaScript30/issues)，如果你也想参与写作，请看 [wiki](https://github.com/soyaine/JavaScript30/wiki/%E6%8C%87%E5%8D%97%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E)，并联系 Soyaine。
+
