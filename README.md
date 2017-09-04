@@ -55,6 +55,11 @@ No | Guide | Demo
 13 | [Slide in on Scroll 指南](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md) | [图片随屏幕滚动而滑入滑出的在线效果](https://soyaine.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)
 14 | [JavaScript References vs. Copying 指南](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying) | -
 15 | LocalStorage | -   
+<<<<<<< HEAD
+16 | [Mouse Move Shadow 指南](https://github.com/dashrun/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/README.md) | [文字阴影随鼠标移动在线效果](http://soyaine.cn/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-finished-es5.html) 
+17 | [Sort Without Articles 指南](https://github.com/soyaine/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/README.md) | [去前缀排序在线效果](http://soyaine.cn/JavaScript30/17%20-%20Sort%20Without%20Articles/index-finished-Dashrun-es5.html)  
+18 | Adding Up Times with Reduce | -    
+=======
 16 | [Mouse Move Shadow 指南](https://github.com/dashrun/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/README.md) | [文字阴影随鼠标移动在线效果](https://soyaine.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-finished-es5.html)
 17 | [Sort Without Articles 指南](https://github.com/soyaine/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/README.md) | [去前缀排序在线效果](https://soyaine.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index-finished-Dashrun-es5.html)  
 18 | [Adding Up Times with Reduce 指南](https://github.com/soyaine/JavaScript30/tree/master/18%20-%20AddingUpTimesWithReduce) | [使用 Reduce 进行时间叠加效果](https://soyaine.github.io/JavaScript30/18%20-%20AddingUpTimesWithReduce/index-finished-Dashrun-es6.html)    
