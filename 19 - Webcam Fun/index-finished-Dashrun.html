@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get User Media Code Along!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+      <button onClick="savePhoto()">Save Photo</button>
+   <div class="rgb">
+        <label for="rmin">Red Min:</label>
+        <input type="range" min=0 max=255 name="rmin" value="0">
+        <label for="rmax">Red Max:</label>
+        <input type="range" min=0 max=255 name="rmax" value="255">
+
+        <br>
+
+        <label for="gmin">Green Min:</label>
+        <input type="range" min=0 max=255 name="gmin" value="0">
+        <label for="gmax">Green Max:</label>
+        <input type="range" min=0 max=255 name="gmax" value="255">
+
+        <br>
+
+        <label for="bmin">Blue Min:</label>
+        <input type="range" min=0 max=255 name="bmin" value="0">
+        <label for="bmax">Blue Max:</label>
+        <input type="range" min=0 max=255 name="bmax" value="255">
+      </div> 
+    </div>
+    <div class="hasimg">
+    <p>照片区域：</p>
+    <canvas class="photo" height="200" width="300"></canvas>
+    </div>
+    <div class="hasimg">
+    <p>实时视频区域：</p>
+    <video class="player"></video>
+    </div>
+    <div class="hasimg">
+    <p>变色画布区域:</p>
+    <div class="strip">
+    <a href="">
+      <img alt="暂未保存图像" id='myimg'>
+    </a>
+    </div>
+    </div>
+  </div>
+
+  <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

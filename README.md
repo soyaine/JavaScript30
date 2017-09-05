@@ -74,7 +74,7 @@ No | Guide | Demo
 参加挑战并不需要你缴纳费用或是加入什么组织，也不会有人催着你去做什么，你只需要打开电脑，然后开始思考、敲击键盘。相信内在动机的力量，我在这里给出了一些建议和心得，最适合你的方法还需要你自己去摸索。
 
 ## 本中文指南贡献者名单
-
+ 
 Name | Contribution
 --- | ---
 [@DrakeXiang](https://github.com/DrakeXiang) |  No.[11](https://github.com/soyaine/JavaScript30/tree/master/11%20-%20Custom%20Video%20Player)
@@ -85,3 +85,4 @@ Name | Contribution
 
 ## JOIN US
 如果对这个系列的指南有什么改进的想法，欢迎[提 issue](https://github.com/soyaine/JavaScript30/issues)，如果你也想参与写作，请看 [wiki](https://github.com/soyaine/JavaScript30/wiki/%E6%8C%87%E5%8D%97%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E)，并联系 Soyaine。
+
