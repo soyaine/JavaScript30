@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Detection</title>
+</head>
+<body>
+
+  <div id="words" class="words" contenteditable>
+  </div>
+
+<script>
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var words = document.getElementById('words');
+
+  //新建一个语音识别对象
+  var speech = new webkitSpeechRecognition();
+  speech.interimResults = true;
+  speech.lang = 'en-US';
+  speech.start();
+
+//有结果返回时
+  speech.addEventListener('result', (e) => {
+      const results = Array.from(e.results) 
+      // e.results中保存的是识别的结果，本来并不是数组，需要将其转换为数组，方便使用其map、join等方法。
+        .map(result => result[0])
+        .map(result => result.transcript) // 获取到每一段话，是一个数组类型
+        .join(''); // 将每一段话连接成字符串
+       //将结果输出在页面上
+        words.innerHTML = results;
+      }
+
+
+//开始捕获到音频时
+speech.onaudiostart = function(e) {
+  console.log('start');
+}
+
+//出现错误时
+speech.onerror = function(e) {
+  console.log(e.error);
+}
+
+//语音识别结束时重新开始捕获语音
+ speech.onend = function(){
+     speech.start();
+ }
+
+</script>
+
+
+  <style>
+    html {
+      font-size: 10px;
+    }
+
+    body {
+      background:#ffc600;
+      font-family: 'helvetica neue';
+      font-weight: 200;
+      font-size: 20px;
+    }
+
+    .words {
+      max-width:500px;
+      margin:50px auto;
+      background:white;
+      border-radius:5px;
+      box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+      padding:1rem 2rem 1rem 5rem;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+      background-size: 100% 3rem;
+      position: relative;
+      line-height:3rem;
+    }
+    p {
+      margin: 0 0 3rem;
+    }
+
+    .words:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      top: 0;
+      left: 30px;
+      bottom: 0;
+      border: 1px solid;
+      border-color: transparent #efe4e4;
+    }
+  </style>
+
+</body>
+</html>
