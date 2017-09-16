@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>👀👀👀Follow Along Nav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="menu" id="menu">
+        <li><a href="" >Home</a></li>
+        <li><a href="">Order Status</a></li>
+        <li><a href="">Tweets</a></li>
+        <li><a href="">Read Our History</a></li>
+        <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+      <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde natus necessitatibus esse obcaecati distinctio, aut itaque, qui vitae!</p>
+      <p>Aspernatur sapiente quae sint <a href="">soluta</a> modi, atque praesentium laborum pariatur earum <a href="">quaerat</a> cupiditate consequuntur facilis ullam dignissimos, aperiam quam veniam.</p>
+      <p>Cum ipsam quod, incidunt sit ex <a href="">tempore</a> placeat maxime <a href="">corrupti</a> possimus <a href="">veritatis</a> ipsum fugit recusandae est doloremque? Hic, <a href="">quibusdam</a>, nulla.</p>
+      <p>Esse quibusdam, ad, ducimus cupiditate <a href="">nulla</a>, quae magni odit <a href="">totam</a> ut consequatur eveniet sunt quam provident sapiente dicta neque quod.</p>
+      <p>Aliquam <a href="">dicta</a> sequi culpa fugiat <a href="">consequuntur</a> pariatur optio ad minima, maxime <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a> quas!</p>
+    </div>
+
+  <script>
+      var oLi = document.getElementsByTagName('li');
+      var len = oLi.length;
+      var activeBackground = document.createElement('span');
+      activeBackground.setAttribute('class','highlight');
+      document.body.appendChild(activeBackground);
+
+      //避免第一次激活时跳动
+      activeBackground.style.display = 'none';
+
+
+      //监听鼠标移入事件及鼠标移出事件
+      for(var i = 0; i < len; i++){
+        oLi[i].onmouseenter = lightOn;
+      }
+
+      //鼠标
+      function lightOn(e){
+        var activeLink = e.target.getBoundingClientRect();
+        var coords = {
+          height:activeLink.height,
+          width:activeLink.width,
+          left:window.pageXOffset + activeLink.left,
+          top: window.pageYOffset + activeLink.top
+        }
+       activeBackground.style.height = `${coords.height}px`;
+       activeBackground.style.width = `${coords.width}px`;
+       activeBackground.style.left = `${coords.left}px`;
+       activeBackground.style.top = `${coords.top}px`;
+       activeBackground.style.display = 'inline';
+      }
+  </script>
+</body>
+</html>
+
