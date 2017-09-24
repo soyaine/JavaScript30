@@ -4,7 +4,7 @@
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 10 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
 > 创建时间：2017-02-06    
-最后更新：2017-04-16
+最后更新：2017-09-24
 
 ## 实现目标
 * 为 `video` 元素添加自定义样式的播放控制面板
@@ -79,6 +79,7 @@ function togglePlay() {
 }
 
 video.addEventListener('click', togglePlay);
+toggle.addEventListener('click', togglePlay);
 ```
 
 对于这种二选一的判断用三元操作符会更简洁，我们可以直接在一行里写完，像这样：
@@ -241,3 +242,7 @@ progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 至此，我们已经实现了控制面板的绝大部分功能，最后一个留给大家自己尝试的功能是全屏播放：
 * 在控制面板中添加一个全屏按钮
 * 点击该按钮后可以进入/退出全屏模式
+
+## ChangeLog
+- 2017-02-06 完稿
+- 2017-09-24 add missing code by [issue#30](https://github.com/soyaine/JavaScript30/issues/30)
