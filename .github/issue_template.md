@@ -1,8 +1,10 @@
 Title: 标号-题目-类型 问题简述
-例子： 
+
+例子：
+
 ```
-11 - Custom Video Player -[readme] LocalStorage 補充
-11 - Custom Video Player -[js] const 写法错误
+11 - Custom Video Player - readme: LocalStorage 補充
+11 - Custom Video Player - js: const 写法错误
 ```
 
 说明中最好提供问题所在的具体位置链接，链接获取方法：
