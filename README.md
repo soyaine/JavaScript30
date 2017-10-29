@@ -1,7 +1,7 @@
 # JavaScript30 - 一个月纯 JS 挑战中文指南
 
 创建日期：2016-12-20  
-最后更新：2017-09-16
+最后更新：2017-10-29
 
 > Repo by: [缉熙Soyaine](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
@@ -65,7 +65,7 @@ No | Guide | Demo
 23 | [Speech Synthesis指南](https://github.com/soyaine/JavaScript30/blob/master/23%20-%20Speech%20Synthesis/README.md) | [Speech Synthesis效果](https://github.com/soyaine/JavaScript30/blob/master/23%20-%20Speech%20Synthesis/index-finished-Dashrun.html)  
 24 | [Sticky Nav指南](https://github.com/soyaine/JavaScript30/blob/master/24%20-%20Sticky%20Nav/README.md) | [Sticky Nav效果](https://github.com/soyaine/JavaScript30/blob/master/24%20-%20Sticky%20Nav/index-finished-Dashrun.html)  
 25 | [Event Related指南](https://github.com/soyaine/JavaScript30/blob/master/25%20-%20Event%20Related/README.md) | [Event Related效果](https://github.com/soyaine/JavaScript30/blob/master/25%20-%20Event%20Related/index-finished-Dashrun.html)   
-26 | Stripe Follow Along Nav | -   
+26 | [Stripe Follow Along Nav指南](https://github.com/soyaine/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/README.md) | [Strip Follow Along Nav效果](https://github.com/soyaine/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/index-finished-Dashrun.html)   
 27 | Click and Drag | -   
 28 | Video Speed Controller |  -  
 29 | Countdown Timer |  -  
@@ -80,7 +80,7 @@ Name | Contribution
 [@DrakeXiang](https://github.com/DrakeXiang) |  No.[11](https://github.com/soyaine/JavaScript30/tree/master/11%20-%20Custom%20Video%20Player)
 [@zzh466](http://github.com/zzh466) | Review
 [@Xing Liu](https://github.com/S1ngS1ng) | Review
-[@大史快跑Dashrun](https://github.com/dashrun) |  No.[16](https://github.com/soyaine/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow).[17](https://github.com/soyaine/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles).[18](https://github.com/soyaine/JavaScript30/tree/master/18%20-%20AddingUpTimesWithReduce).[19](https://github.com/soyaine/JavaScript30/blob/master/19%20-%20Webcam%20Fun).[20](https://github.com/soyaine/JavaScript30/tree/master/20%20-%20Speech%20Detection).[21](https://github.com/soyaine/JavaScript30/tree/master/21%20-%20Geolocation).[22](https://github.com/soyaine/JavaScript30/tree/master/22%20-%20Follow%20Along%20Link%20Highlighter).[23](https://github.com/soyaine/JavaScript30/tree/master/23%20-%20Speech%20Synthesis).[24](https://github.com/soyaine/JavaScript30/tree/master/24%20-%20Sticky%20Nav).[25](https://github.com/soyaine/JavaScript30/tree/master/25%20-%20Event%20Related)
+[@大史快跑Dashrun](https://github.com/dashrun) |  No.[16](https://github.com/soyaine/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow).[17](https://github.com/soyaine/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles).[18](https://github.com/soyaine/JavaScript30/tree/master/18%20-%20AddingUpTimesWithReduce).[19](https://github.com/soyaine/JavaScript30/blob/master/19%20-%20Webcam%20Fun).[20](https://github.com/soyaine/JavaScript30/tree/master/20%20-%20Speech%20Detection).[21](https://github.com/soyaine/JavaScript30/tree/master/21%20-%20Geolocation).[22](https://github.com/soyaine/JavaScript30/tree/master/22%20-%20Follow%20Along%20Link%20Highlighter).[23](https://github.com/soyaine/JavaScript30/tree/master/23%20-%20Speech%20Synthesis).[24](https://github.com/soyaine/JavaScript30/tree/master/24%20-%20Sticky%20Nav).[25](https://github.com/soyaine/JavaScript30/tree/master/25%20-%20Event%20Related).[26](https://github.com/soyaine/JavaScript30/tree/master/26%20-%20Strip%20Follow%20Along%20Nav)
 [@缉熙Soyaine](https://github.com/soyaine) | No.[1](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit).[2](https://github.com/soyaine/JavaScript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock).[3](https://github.com/soyaine/JavaScript30/tree/master/03%20-%20CSS%20%Variables).[4](https://github.com/soyaine/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201).[5](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery).[6](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead).[7](https://github.com/soyaine/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202).[8](https://github.com/soyaine/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas).[9](https://github.com/soyaine/JavaScript30/blob/master/09%20-%20Dev%20Tools%20Domination).[10](https://github.com/soyaine/JavaScript30/blob/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/README.md).[12](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md).[13](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md).[14](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying)
 
 ## JOIN US
