@@ -1,6 +1,6 @@
 # 20 Speech Detection 中文指南
 
-> 本篇作者：©[大史快跑Dashrun](https://github.com/dashrun)——Chinasoft Frontend Developer
+> 本篇作者：©[大史不说话](https://github.com/dashnowords)——Chinasoft Frontend Web Developer
 
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 20 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
@@ -12,7 +12,7 @@
 说明：由于只有chrome浏览器实现了该接口，而语音识别需要将捕捉到的信息发送至google服务器进行处理，故本文档只提供解决思路和参考代码。
 
 ## 实现效果
-![结果展示](https://github.com/dashrun/vanilla-javascript-30/blob/master/20%20-%20Speech%20Detection/effects.png)
+![结果展示](https://github.com/soyaine/JavaScript30/blob/master/20%20-%20Speech%20Detection/effects.png)
 
 ## 相关知识
 有关语音识别接口`SpeechRecognition`的说明，可查看[MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechRecognition)中的相关解释。
