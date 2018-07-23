@@ -21,7 +21,7 @@
 3. 每一秒改变一次指针状态
 
 **涉及到的特性：**
-- `transform-oragin`
+- `transform-origin`
 - `transform: rotate()`
 - `transition`
 - `transition-timing-function: cubic-bezier(x, x, x, x)`
@@ -33,10 +33,10 @@
 ### CSS 部分
 
 1. 调整指针的初始位置以及旋转的轴点
-    [transform-oragin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+    [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
     
     ```css
-    transform-oragin: 100%; // 或者可以用 right
+    transform-origin: 100%; // 或者可以用 right
     ```
 
 2. 调整时钟指针跳动时的过渡效果
