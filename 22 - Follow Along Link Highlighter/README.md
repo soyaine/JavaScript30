@@ -1,6 +1,6 @@
 # 22 Follow Along Link Highliter 中文指南
 
-> 本篇作者：©[大史快跑Dashrun](https://github.com/dashrun)——Chinasoft Frontend Developer
+> 本篇作者：©[大史不说话](https://github.com/dashnowords)——Chinasoft Frontend Web Developer
 
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 22 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
@@ -11,7 +11,7 @@
 初始文档`index-start.html`提供了一组使用`<ul>`及`<li>`标签包裹的导航标签。本次的编程挑战任务是完成如下动画效果：当鼠标移动至某个对应标签上时，为标签添加一个白色的背景框，高亮表示该标签被选中，当鼠标移动至其他标签后，白色背景框不消失，而是直接跟随鼠标平移至新的标签，实现效果见下图展示。
 
 ## 实现效果
-![结果展示](https://github.com/dashrun/vanilla-javascript-30/blob/master/22%20-%20Follow%20Along%20Link%20Highlighter/effects.gif)
+![结果展示](https://github.com/soyaine/JavaScript30/blob/master/22%20-%20Follow%20Along%20Link%20Highlighter/effects.gif)
 
 
 ## 相关知识

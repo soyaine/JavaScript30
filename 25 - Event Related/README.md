@@ -1,6 +1,6 @@
 # 25 Event Related 中文指南
 
-> 本篇作者：©[大史快跑Dashrun](https://github.com/dashrun)——Chinasoft Frontend Developer
+> 本篇作者：©[大史不说话](https://github.com/dashnowords)——Chinasoft Frontend Web Developer
 
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 25 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
@@ -11,7 +11,7 @@
 初始文档`index-start.html`提供了3个尺寸不一的`<div>`元素，本次挑战是一次学习任务，主要了解学习DOM的事件机制，包括事件捕获，事件冒泡，单次触发等。
 
 ## 结果展示
-![结果展示](https://github.com/dashrun/vanilla-javascript-30/blob/master/25%20-%20Event%20Related/effects.png)
+![结果展示](https://github.com/soyaine/JavaScript30/blob/master/25%20-%20Event%20Related/effects.png)
 
 ## 相关知识
 [addEventListener文档](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)

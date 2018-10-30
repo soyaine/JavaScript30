@@ -1,6 +1,6 @@
 # 27 Click And Drag 中文指南
 
-> 本篇作者：©[大史快跑Dashrun](https://github.com/dashrun)——Chinasoft Frontend Developer
+> 本篇作者：©[大史不说话](https://github.com/dashnowords)——Chinasoft Frontend Web Developer
 
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 27 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
@@ -11,7 +11,7 @@
 初始文档`index-start.html`中提供了一组条幅，本次的编程任务需要实现的效果是当鼠标拖动画面移动时，条幅同步向水平方向移动。
 
 ## 实现效果
-![结果展示](https://github.com/dashrun/vanilla-javascript-30/blob/master/27%20-%20Click%20and%20Drag/effect.png)
+![结果展示](https://github.com/soyaine/JavaScript30/blob/master/27%20-%20Click%20and%20Drag/effect.png)
 
 ## 编程思路  
 在最外层的items元素上监听鼠标的按下，移动，弹起事件并编写相应的回调函数即可，在对应的回调函数中获取到鼠标横向滑动的距离，将该距离值翻倍后赋值予条幅的scrollLeft属性可调整元素在水平方向上滚动的位置。   
