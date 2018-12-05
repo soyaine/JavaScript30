@@ -1,7 +1,7 @@
 # JavaScript30 - 一个月纯 JS 挑战中文指南
 
 创建日期：2016-12-20  
-最后更新：2017-10-29
+最后更新：2018-12-05
 
 > Repo by: [未枝丫](https://github.com/soyaine)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
@@ -42,7 +42,7 @@ No | Guide | Demo
 --- | --- | ---
 1 | [JavaScript Drum Kit  指南](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit) |  [纯 JS 模拟敲鼓效果](http://soyaine.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-SOYAINE.html)
 2 | [JS + CSS Clock 指南](https://github.com/soyaine/JavaScript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock) |  [纯 JavaScript+CSS 时钟效果](http://soyaine.github.io/JavaScript30/02%20-%20JS%20%2B%20CSS%20Clock/index-SOYAINE.html)
-3 | [CSS Variables 指南](https://github.com/soyaine/JavaScript30/tree/master/03%20-%20CSS%20%Variables) |  [用 CSS 变量实现拖动控制参数效果](http://soyaine.github.io/JavaScript30/03%20-%20CSS%20Variables/index-SOYAINE.html)
+3 | [CSS Variables 指南](https://github.com/soyaine/JavaScript30/tree/master/03%20-%20CSS%20Variables) |  [用 CSS 变量实现拖动控制参数效果](http://soyaine.github.io/JavaScript30/03%20-%20CSS%20Variables/index-SOYAINE.html)
 4 | [Array Cardio, Day 1 指南](https://github.com/soyaine/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [数组基本操作方法示例一](http://soyaine.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index-SOYAINE.html)
 5 | [Flex Panel Gallery 指南](https://github.com/soyaine/JavaScript30/blob/master/05%20-%20Flex%20Panel%20Gallery/README.md) | [可伸缩的图片墙在线效果](https://soyaine.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
 6 | [Type Ahead 指南](https://github.com/soyaine/JavaScript30/blob/master/06%20-%20Type%20Ahead/README.md) |  [根据关键词快速匹配诗句在线效果](https://soyaine.github.io/JavaScript30/06%20-%20Type%20Ahead/index-SOYAINE.html)
@@ -54,7 +54,7 @@ No | Guide | Demo
 12 | [Key Sequence Detection 指南](https://github.com/soyaine/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection/README.md) | [在线效果](https://soyaine.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/index-FINISHED.html)
 13 | [Slide in on Scroll 指南](https://github.com/soyaine/JavaScript30/blob/master/13%20-%20Slide%20in%20on%20Scroll/README.md) | [图片随屏幕滚动而滑入滑出的在线效果](https://soyaine.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index-SOYAINE.html)
 14 | [JavaScript References vs. Copying 指南](https://github.com/soyaine/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying) | -
-15 | LocalStorage | -   
+15 | [LocalStorage](https://github.com/soyaine/JavaScript30/blob/master/15%20-%20LocalStorage/README.md) | [利用 localStorage 模拟在线菜单](https://soyaine.github.io/JavaScript30/15%20-%20LocalStorage/index-SOYAINE.html)
 16 | [Mouse Move Shadow 指南](https://github.com/soyaine/JavaScript30/blob/master/16%20-%20Mouse%20Move%20Shadow/README.md) | [文字阴影随鼠标移动在线效果](https://soyaine.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index-finished-es5.html)
 17 | [Sort Without Articles 指南](https://github.com/soyaine/JavaScript30/blob/master/17%20-%20Sort%20Without%20Articles/README.md) | [去前缀排序在线效果](https://soyaine.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index-finished-Dashrun-es5.html)  
 18 | [Adding Up Times with Reduce 指南](https://github.com/soyaine/JavaScript30/tree/master/18%20-%20AddingUpTimesWithReduce) | [使用 Reduce 进行时间叠加效果](https://soyaine.github.io/JavaScript30/18%20-%20AddingUpTimesWithReduce/index-finished-Dashrun-es6.html)    

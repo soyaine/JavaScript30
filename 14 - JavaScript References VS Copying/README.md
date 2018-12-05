@@ -4,7 +4,7 @@
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 14 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
 > 创建时间：2017-07-19    
-最后更新：2017-07-21
+最后更新：2018-12-05
 
 ## 实现效果
 
@@ -98,6 +98,8 @@
    
      使用 `Object.assign(target, ...sources)` 时，后来的源对象的属性值，将会覆盖它之前的对象的属性。所以可以先复制 `person` 之后，再赋给属性新的值。
 
+     需要注意的是：这个例子里面，我们用的数组和对象都只是一层嵌套，Lodash 有一个深度复制的方法，但使用之前需要多考虑一下。
+
      ```js
      const cap2 = Object.assign({}, person, { number: 99, age: 12 });
      console.log(cap2); // Object {name: "Wes Bos", age: 12, number: 99}
@@ -122,8 +124,7 @@
      console.log(dev);
      console.log(dev2);
      ```
-  
-  最后需要注意的是：在前面的例子里面，我们用的数组和对象都只是一层嵌套，Lodash 有一个深度复制的方法，但你使用之前需要多考虑一下。
+
   
 OVER~\(^o^)/~
 

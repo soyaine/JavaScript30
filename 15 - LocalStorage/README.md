@@ -4,7 +4,7 @@
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 15 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
 > 创建时间：2017-07-24    
-最后更新：2017-08-10
+最后更新：2018-12-05
 
 ## 实现效果
 我们的目的是使网页模拟菜单的效果，在页面中添加新的菜品，而且在页面刷新之后也不清空。
@@ -75,3 +75,6 @@
         ```
     - **LocalStorage 更新**  
         我们利用 LocalStorage 把信息存到本地，从而可以保证刷新后内容不变。但使用 `localStorage` 的时候，直接把 `items` 传入得到的值是 [object Object]，所以需要在把数据传进去之前就把内容转换成 String 类型的数据，之后读取时也使用 `JSON.parse()` 来将数据转换成 JSON 格式。
+        
+        > 来自 [@diabloevagto](https://github.com/diabloevagto) 在 [issue](https://github.com/soyaine/JavaScript30/issues/32) 里的补充：
+        > 这样的原因是因为 localStorage 里面只会储存 String 类型数据，如果传入的是非 String 则会直接使用 toString 转换：`({}).toString() //"[object Object]"`，这时候就会发生异常，所以才需要先使用 `JSON.stringify()` 将 Object 转换成 json 格式，读取出来之后再利用 `JSON.parse()` 转换为 Object。
