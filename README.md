@@ -29,7 +29,7 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 
 下面是完成 Wes Bos 的 JavaScript30 挑战所能借鉴的文档，每个文档的具体使用建议如下：
 
-- [JavaScript30 官网](https://javascript30.com)：进入官网注册后可以观看和下载所有教程视频。Wes Bos 还把视频传到了百度云，进入官网直接拉到页面底部就能找到链接。
+- [JavaScript30 官网](https://javascript30.com)：进入官网注册后可以观看和下载所有教程视频。
 - [Nitish Dayal 写的英文指南](https://github.com/nitishdayal/JavaScript30/tree/master/exercises)：这是一份非官方的文字版指南，也是激励我写这一系列文章的主要因素。
 - [挑战初始文档](https://github.com/wesbos/JavaScript30)：这是 Wes Bos 这份教程涉及的代码，你可以直接 Clone 或者下载到本地，然后开始你 30 天的挑战之旅。文档共有 30 个文件夹，每个文件夹中至少有两个文件。
 	- **index-START.html**：是提供给我们的初始文档，方便我们专注于 JavaScript 的编写，这个文档已经将基础的 HTML 和 CSS 部分写好，我们只需要在这个基础上编写 JavaScript 代码，实现特定的功能即可。
