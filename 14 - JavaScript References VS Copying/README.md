@@ -40,7 +40,7 @@
     WOW 原数组 `plaryers` 也被修改了。为什么会这样？因为 `team` 只是这个数组的引用，并不是它的复制。`team` 和 `players` 这两个变量指向的是同一个数组。  
     所以如何解决这个问题？接下来我们开始真正的复制吧！
      - **方法一 [`Array.prototype.slice()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)** 
-        
+       
         由于运行 `slice` 得到的结果是一个对原数组的浅拷贝，原数组不会被修改。所以如果修改这两个数组中任意 一个，另一个都不会受到影响。
         ```js
         const team2 = players.slice();
@@ -48,7 +48,7 @@
         console.log(players, team2); 
         ```
      - **方法二 [`Array.prototype.concat()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)**
-        
+       
         `concat()` 方法是用来合并数组的，它也不会更改原有的数组，而是返回一个新数组，所以可以将 `players` 数组与一个空数组合并，得到的结果就符合预期了。
         ```js
         const team3 = [].concat(players);
@@ -56,7 +56,7 @@
         console.log(players, team3); 
         ```
      - **方法三 ES6 [扩展语法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Spread_operator)**
-     
+    
         扩展语法可以像扩展参数列表一样来扩展数组，效果与上述方法类似，但比较简洁。
         ```js
         const team4 = [...players];
@@ -64,13 +64,13 @@
         console.log(players, team4);
         ```
      - **方法四 [`Array.from()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)**
-     
+    
         此外使用 Array 创建新的数组实例的方法也是可行的。
         ```js
         const team5 = Array.from(players);
         team5[3] = 'Lux5';
         console.log(players, team5);
-        ```    
+        ```
     
    除此之外，还可以用 `push` 这样的方法。数组部分已经介绍完毕，下面我们进入 Object 类型数据的试验吧~
    
@@ -117,7 +117,7 @@
          facebook: 'wesbos.developer'
        }
      };
-
+     
      const dev = Object.assign({}, wes);
      const dev2 = JSON.parse(JSON.stringify(wes));
      console.log(wes);
@@ -125,7 +125,27 @@
      console.log(dev2);
      ```
 
-  
+> 对于浅拷贝、深拷贝的补充
+>
+> 参考了 [什么是浅拷贝？什么是深拷贝？](https://www.jianshu.com/p/56598f2ac42e)
+>
+> 2021/10/10 by @[FangzhouSu](https://github.com/FangzhouSu)
+
+- 浅拷贝、深拷贝的区别
+
+![img](https://upload-images.jianshu.io/upload_images/15856169-26e2e4a0fc8a39b4.png?imageMogr2/auto-orient/strip|imageView2/2/w/310/format/webp)
+
+- 赋值、浅拷贝、深拷贝的区别
+  - 浅拷贝在改变原数据包含的子对象时会使原数据一同改变
+  - 深拷贝在改变原数据包含的子对象时则不会改变原数据（看上图可以更好地进行理解）
+    - 浅拷贝实际上只复制到了 `Original ListHead` 而后面的节点只是被其“引用”了！
+
+![img](https://upload-images.jianshu.io/upload_images/15856169-88bd5975eafaa488.png?imageMogr2/auto-orient/strip|imageView2/2/w/600/format/webp)
+
+- 在本DEMO中的体现
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/32cc2c8793e74da3818c74686c0fca8c.png)
+
 OVER~\(^o^)/~
 
 

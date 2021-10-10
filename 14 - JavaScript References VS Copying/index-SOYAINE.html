@@ -68,7 +68,7 @@
     team4[3] = 'heeee hawww';
     console.log(team4);
 
-    console.log("   解决方法4 利用ES6中的from方法 复制数组");
+    console.log("   解决方法04 利用ES6中的from方法 复制数组");
     const team5 = Array.from(players);
 
     // now when we update it, the original one isn't changed
@@ -92,6 +92,7 @@
     // how do we take a copy instead?
     // 如何才能复制它呢？
     console.log("04 复制对象 而不是引用对象");
+    console.log("   解决方法1 Object.assign() 浅拷贝的方法");
     const cap2 = Object.assign({}, person, { number: 99, age: 12 });
     console.log(cap2);
 
@@ -115,9 +116,14 @@
 
     const dev = Object.assign({}, wes);
 
+    console.log("   解决方法2 JSON转换 进行了深拷贝");
     const dev2 = JSON.parse(JSON.stringify(wes));
 
-    console.log();
+    console.log("来试一下浅拷贝&深拷贝的区别");
+    dev.social.name = 'wesbos';// 会影响到原对象
+    dev2.social.name = "我不会影响到原对象wes啦啦啦~";
+
+    console.log(wes, dev, dev2);
 
   </script>
 
