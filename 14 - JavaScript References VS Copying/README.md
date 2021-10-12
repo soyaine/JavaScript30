@@ -133,18 +133,23 @@
 
 - 浅拷贝、深拷贝的区别
 
-![img](https://upload-images.jianshu.io/upload_images/15856169-26e2e4a0fc8a39b4.png?imageMogr2/auto-orient/strip|imageView2/2/w/310/format/webp)
+![deepcopy](https://user-images.githubusercontent.com/75036021/136916022-88186394-d64b-46ce-a9cc-1efea5ce1c5f.jpg)
 
 - 赋值、浅拷贝、深拷贝的区别
   - 浅拷贝在改变原数据包含的子对象时会使原数据一同改变
+  
   - 深拷贝在改变原数据包含的子对象时则不会改变原数据（看上图可以更好地进行理解）
     - 浅拷贝实际上只复制到了 `Original ListHead` 而后面的节点只是被其“引用”了！
-
-![img](https://upload-images.jianshu.io/upload_images/15856169-88bd5975eafaa488.png?imageMogr2/auto-orient/strip|imageView2/2/w/600/format/webp)
+    
+    |        | 和原数据是否指向同一个对象 | 原数据第一层数据为基本数据类型时                       | 原数据中包含子对象时               |
+    | ------ | -------------------------- | ------------------------------------------------------ | ---------------------------------- |
+    | 赋值   | 是                         | 改变**赋值**得来的对象会使原对象的数据一同改变         | 改变会使原对象的数据一同改变       |
+    | 浅拷贝 | 否                         | 改变**浅拷贝**得来的对象**不会**使原对象的数据一同改变 | 改变会使原对象的数据一同改变       |
+    | 深拷贝 | 否                         | 改变**深拷贝**得来的对象**不会**使原对象的数据一同改变 | 改变**不会**使原对象的数据一同改变 |
 
 - 在本DEMO中的体现
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/32cc2c8793e74da3818c74686c0fca8c.png)
+![image](https://user-images.githubusercontent.com/75036021/136916199-ff455511-7eca-4be2-be02-a78993f2a144.png)
 
 OVER~\(^o^)/~
 

@@ -50,25 +50,25 @@
 
     // So, how do we fix this? We take a copy instead!
     // 所以如何解决这个问题？下面来进行复制。
-    console.log("03 复制数组 而不是引用数组 介绍四个解决方案");
-    console.log("   解决方法01 利用slice()方法 复制数组");
+    console.log("03 我们要复制数组对象，而不是引用它们，下面介绍4种复制数组对象的方法~");
+    console.log("   解决方法1 利用slice()方法 复制数组");
     const team2 = players.slice();
 
     // one day
 
     // or create a new array and concat the old one in
     // 或者创建一个新数组，然后用 concat 方法来获取它
-    console.log("   解决方法02 创建新数组并利用concat()方法 复制数组");
+    console.log("   解决方法2 创建新数组并利用concat()方法 复制数组");
     const team3 = [].concat(players);
 
     // or use the new ES6 Spread
     // 再或者用 ES6 里面的扩展语法
-    console.log("   解决方法03 利用扩展运算符 复制数组");
+    console.log("   解决方法3 利用扩展运算符 复制数组");
     const team4 = [...players];
     team4[3] = 'heeee hawww';
     console.log(team4);
 
-    console.log("   解决方法04 利用ES6中的from方法 复制数组");
+    console.log("   解决方法4 利用ES6中的from方法 复制数组");
     const team5 = Array.from(players);
 
     // now when we update it, the original one isn't changed
@@ -91,7 +91,7 @@
 
     // how do we take a copy instead?
     // 如何才能复制它呢？
-    console.log("04 复制对象 而不是引用对象");
+    console.log("04 同上面一样，我们要复制Object对象，而不是引用它们，下面介绍两种复制Object对象的方法~");
     console.log("   解决方法1 Object.assign() 浅拷贝的方法");
     const cap2 = Object.assign({}, person, { number: 99, age: 12 });
     console.log(cap2);
