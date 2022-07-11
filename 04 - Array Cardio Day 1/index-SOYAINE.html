@@ -44,12 +44,13 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-    // 筛选 16 世纪出生的人
+    // 1. 筛选 16 世纪出生的人
     const fifteen = inventors.filter(function (inventor) {
       if (inventor.year >= 1500 && inventor.year < 1600) {
         return true;
       }
     });
+    console.log('1. 筛选 16 世纪出生的人');
     console.table(fifteen);
 
     const __fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
@@ -59,6 +60,7 @@
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
     // 展示上面发明家的姓名  
+    console.log('2. 展示上面发明家的姓名');
     const fullNames = inventors.map(inventor => inventor.first + ' ' + inventor.last);
     //	 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
     console.log(fullNames);
@@ -67,6 +69,7 @@
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
     // 把这些人从大到小进行排序
+    console.log('3. 把发明家从大到小进行排序');
     //	  const ordered = inventors.sort(function(firstName, secondName) {
     //		  if(firstName.year > secondName.year) {
     //			  return 1;  //	  对 sort 函数，返回值为 -1 排在前面，1 排在后面
@@ -76,13 +79,15 @@
     //	  });
     //	  console.table(ordered);	
 
-    const __ordered = inventors.sort((a, b) => (a > b) ? 1 : -1);
+    const __ordered = inventors.sort((a, b) => (a.year > b.year) ? 1 : -1);
     console.table(__ordered);
 
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live
     // 他们所有人一共活了多少岁
+    console.log('4. 所有发明家一共活了多少岁');
+
     // 下面三种写法是一样的效果
     //	  var total = 0;
     //	  for(var i = 0; i < inventors.length; i++) {
@@ -102,7 +107,8 @@
 
     // 5. Sort the inventors by years lived、
     // 按照他们在世的岁数进行排序
-    const oldest = people.sort((a, b) => {
+    console.log('5. 按照发明家在世的岁数进行排序');
+    const oldest = inventors.sort((a, b) => {
       const last = a.passed - a.year;
       const next = b.passed - b.year;
       return (next < last) ? -1 : 1;
@@ -131,9 +137,10 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
-    // 按照姓氏的字母进行排序
+    // 按照姓氏（逗号后面的单词）的字母进行排序
+    console.log('7. 按照people姓氏（逗号后面的单词）的字母进行排序');
     const sortName = people.sort((a, b) => {
-      return (a.last > b.last) ? 1 : -1;
+      return (a.split(', ')[1] > b.split(', ')[1]) ? 1 : -1;
     })
     console.table(sortName);
 
@@ -141,6 +148,7 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     // 统计各个物品的数量
+    console.log('8. 统计各个物品的数量');
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car',
       'truck'
     ];

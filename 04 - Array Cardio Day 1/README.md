@@ -1,6 +1,6 @@
 # 04 Array Cardio 💪 指南一
 
-> 作者：©[未枝丫](https://github.com/soyaine)  
+> 作者：©[Soyaine](https://github.com/soyaine)  
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 4 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
 ## 实现效果
@@ -27,7 +27,7 @@ console.table(thing)
 4. 计算所有的发明家加起来一共活了多少岁
 5. 按照他们活了多久来进行排序
 6. 筛选出一个网页里含有某个词语的标题
-7. 按照姓氏来对发明家进行排序
+7. 按照姓氏来进行排序
 8. 统计给出数组中各个物品的数量
 
 ## 相关知识
