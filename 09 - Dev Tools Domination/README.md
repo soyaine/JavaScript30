@@ -64,7 +64,7 @@ console.dir(p);
 
 要清空已经打印输出的内容，有两种方式，一种是 JavaScript 语句： `console.clear()`。另一个是快捷键 Ctrl ＋ L。
 
-### asset 方法进行测试
+### assert 方法进行测试
 
 接受一个表达式作为参数，如果参数返回值是 false，则会输出第二个参数中的内容。
 
